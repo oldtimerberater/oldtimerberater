@@ -342,8 +342,6 @@
       --article-column-gap: 2vw;
       --article-row-gap: 1.2vh;
       --header-footer-margin-size: 1.2vh;
-
-      background-color: green;
     }
 
     article {
