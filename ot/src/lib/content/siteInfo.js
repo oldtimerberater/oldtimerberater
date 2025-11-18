@@ -1,7 +1,7 @@
 export const siteInfo = {
   domain: "oldtimerberater.eu",
   meta: {
-    description: "oldtimer and parts sourcing",
+    description: "oldtimer & parts brokerage",
   },
   title: "oldtimer",
   founder: {
