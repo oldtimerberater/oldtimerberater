@@ -96,7 +96,7 @@ Include:
 
 ---
 
-# 🔗 **Internal alignment rules (CRITICAL)**
+# **Internal alignment rules (CRITICAL)**
 
 To create an entity, Google must see **the same fact repeated on 5 different sites**:
 
@@ -115,7 +115,7 @@ If even 1 profile introduces inconsistencies → the entity collapses.
 
 ---
 
-# 🧩 **How Google connects these**
+# **How Google connects these**
 
 The flow looks like this:
 
@@ -134,7 +134,7 @@ This process takes 4–12 weeks.
 
 ---
 
-# ⭐ **If you want**
+# **If you want**
 
 I can now produce the **one-week operational plan** (step-by-step, one platform per day), with:
 
