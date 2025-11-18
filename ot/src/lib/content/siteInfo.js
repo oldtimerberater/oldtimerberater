@@ -9,7 +9,7 @@ export const siteInfo = {
     lastName: "Paymushin",
   },
   contacts: {
-    telephone: "+49 176 11111111",
+    telephone: "+4917638000034",
     email: "andrey.paymushin@gmail.com",
   },
   address: {
