@@ -1,15 +1,39 @@
 @import url("/fonts/Inter-4.1/web/inter.css");
 
-:root {
-  font-family: 'Inter', sans-serif;
-}
+:root { font-family: "Inter", sans-serif; }
 
 @supports (font-variation-settings: normal) {
-  :root {
-    font-family: 'InterVariable', sans-serif;
-    font-variation-settings: "wght" 400, "opsz" 32;
-    font-feature-settings: "case" 0, "dlig" 0, "frac" 0, "dnom" 0, "numr" 0, "subs" 0, "sups" 0, "tnum" 0, "zero", "ss01", "ss02" 0, "ss03" 0, "ss04" 0, "ss05" 0, "ss06" 0, "ss07" 0, "ss08" 0, "cv01" 0, "cv02" 0, "cv03" 0, "cv04" 0, "cv05", "cv06", "cv07", "cv08" 0, "cv09" 0, "cv10" 0, "cv11", "cv12", "cv13", "cpsp", "c2sc" 0, "salt" 0, "aalt" 0, "calt", "ccmp", "locl", "kern";
-  }
+  :root { font-family: "InterVariable", sans-serif; font-optical-sizing: auto; }
+}
+
+:root {
+  --drop-shadow-x: 2px;
+  --drop-shadow-y: 4px;
+  --drop-shadow-spread: 6px;
+  --drop-shadow-color: hsl(0deg 0% 83.16%);
+  --color: black;
+  --row-gap: 1dvh;
+  --column-gap: 2dvw;
+
+  --footer-color: hsl(0deg 0% 54.53%);
+
+  --body-background-color: hsl(0deg 0% 92.86%);
+  --article-background-color: white;
+  --article-border-radius: 3px;
+  --article-padding: min(2dvh, 2dvw);
+  --article-filter: drop-shadow(var(--drop-shadow-x) var(--drop-shadow-y) var(--drop-shadow-spread) var(--drop-shadow-color));
+
+  --opsz: 32;
+  --wght: 400;
+  --letter-spacing: -0.019em;
+
+  --name-opsz: 14;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -18,7 +42,51 @@ body {
   justify-content: center;
   align-items: center;
 
-  margin: 0;
-  height: 100vh;
-}
+  background-color: var(--body-background-color);
 
+  font-weight: unset;
+  font-variation-settings: "opsz" var(--opsz), "wght" var(--wght);
+  font-feature-settings:
+    "case" 0,
+    "dlig" 0,
+    "frac" 0,
+    "dnom" 0,
+    "numr" 0,
+    "subs" 0,
+    "sups" 0,
+    "tnum" 0,
+    "zero" 0,
+    "ss01" 0,
+    "ss02",
+    "ss03" 0,
+    "ss04" 0,
+    "ss05" 0,
+    "ss06" 0,
+    "ss07" 0,
+    "ss08" 0,
+    "cv01" 0,
+    "cv02" 0,
+    "cv03" 0,
+    "cv04" 0,
+    "cv05" 0,
+    "cv06" 0,
+    "cv07" 0,
+    "cv08" 0,
+    "cv09" 0,
+    "cv10" 0,
+    "cv11" 0,
+    "cv12" 0,
+    "cv13" 0,
+    "cpsp" 0,
+    "c2sc" 0,
+    "salt",
+    "aalt" 0,
+    "calt",
+    "ccmp",
+    "locl",
+    "kern";
+  letter-spacing: var(--letter-spacing);
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  text-transform: none;
+}
