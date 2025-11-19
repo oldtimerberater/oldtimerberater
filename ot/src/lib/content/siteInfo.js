@@ -8,7 +8,7 @@ export const siteInfo = {
     firstName: "Andrey",
     lastName: "Paymushin",
   },
-  position: "founder/CEO",
+  position: "founder / CEO",
   contacts: {
     telephone: "+4917638000034",
     emailDomain: "gmail.com",

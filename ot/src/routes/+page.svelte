@@ -18,7 +18,7 @@
       >{siteInfo.contacts.telephone}</a
     >
 
-    <a href={JSONLD.email} class="mailto" target="_blank"
+    <a href="mailto:{JSONLD.email}" class="mailto" target="_blank"
       >@{siteInfo.founder.firstName.toLowerCase()}.{siteInfo.founder.lastName.toLowerCase()}</a
     >
   </div>
@@ -29,7 +29,7 @@
   article {
     container: article / inline-size;
     display: grid;
-    grid-template-columns: 1dvw 1fr 1dvw;
+    grid-template-columns: 5dvw 1fr 5dvw;
     grid-template-rows: auto 2fr 1fr auto;
     grid-template-areas:
       ". header ."
@@ -152,14 +152,42 @@
     }
   }
 
-  @media (orientation: portrait) and (max-width: 390px) {
+  @media (orientation: portrait) and (max-width: 430px) {
     article {
       width: 100dvw;
       max-width: 100dvw;
       height: 100dvh;
       max-height: 100dvh;
+      grid-template-rows: auto 3fr 1fr auto;
+      background-color: transparent;
+      filter: none;
+      padding: 0;
 
-      background-color: yellow;
+      & > .name-position-service {
+        grid-template-rows: 1fr auto 1fr;
+
+        & > .name {
+          font-size: calc(var(--name-font-size) * 0.8);
+        }
+
+        & > .service {
+          align-items: start;
+          padding-top: 5dvh;
+        }
+      }
+
+      & > .contacts {
+        column-gap: 0;
+
+        & > .tel {
+          font-size: calc(var(--tel-font-size) * 0.8);
+          justify-content: center;
+        }
+        & > .mailto {
+          font-size: calc(var(--mailto-font-size) * 0.8);
+          justify-content: center;
+        }
+      }
     }
   }
 
@@ -169,8 +197,19 @@
       max-width: 100dvw;
       height: 100dvh;
       max-height: 100dvh;
+      grid-template-columns: auto 1fr auto;
+      grid-template-rows: auto 3fr 1fr auto;
+      filter: none;
+      background-color: transparent;
+      padding: 0;
 
-      background-color: brown;
+      & > .name-position-service {
+        grid-template-rows: 1fr auto 1fr;
+
+        & > .name {
+          align-items: center;
+        }
+      }
     }
   }
 </style>
