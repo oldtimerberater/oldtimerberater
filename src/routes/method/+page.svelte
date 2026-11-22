@@ -5,6 +5,18 @@
 <main>
 	<h1>Method</h1>
 
+	<nav aria-label="Method sections">
+		<ul>
+			<li><a href="#mandate">The Collector’s Mandate</a></li>
+			<li><a href="#research">Research</a></li>
+			<li><a href="#evidence">Evidence</a></li>
+			<li><a href="#motor-car">The Motor Car</a></li>
+			<li><a href="#judgement">Independent Judgement</a></li>
+			<li><a href="#acquisition">The Acquisition</a></li>
+			<li><a href="#principles">Principles</a></li>
+		</ul>
+	</nav>
+
 	<section id="mandate" aria-labelledby="mandate-title">
 		<h2 id="mandate-title">The Collector’s Mandate</h2>
 
