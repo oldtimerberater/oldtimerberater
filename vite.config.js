@@ -1,4 +1,3 @@
-import { paraglideVitePlugin } from '@inlang/paraglide-js';
 import { defineConfig } from 'vitest/config';
 import { playwright } from '@vitest/browser-playwright';
 import adapter from '@sveltejs/adapter-static';
@@ -16,12 +15,6 @@ export default defineConfig({
       adapter: adapter({ precompress: true }),
       experimental: { remoteFunctions: true }
     }),
-
-    paraglideVitePlugin({
-      project: './project.inlang',
-      outdir: './src/lib/paraglide',
-      emitTsDeclarations: true
-    })
   ],
   test: {
     expect: { requireAssertions: true },
