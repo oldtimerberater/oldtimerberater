@@ -9,6 +9,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<link rel="canonical" href={`https://oldtimerberater.eu${page.url.pathname}`} />
 </svelte:head>
 
 <div class="site-shell">

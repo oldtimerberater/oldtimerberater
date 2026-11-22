@@ -4,6 +4,10 @@
 
 <svelte:head>
 	<title>Private Enquiries — Independent Advisory</title>
+	<meta
+		name="description"
+		content="Private enquiries concerning historically significant motor cars, including research, assessment and acquisition advice. Contact by email or telephone."
+	/>
 </svelte:head>
 
 <main class="contact-page layout-grid">
