@@ -1,3 +1,4 @@
+
 @import '@fontsource-variable/roboto-flex/full.css';
 
 :root {
@@ -70,12 +71,15 @@
 	--layout-section-gap: clamp(7.5rem, 10vw, 10rem);
 }
 
-/* Box model */
+/* Global box model and selection policy */
 
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
+
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 /* Document */
@@ -99,6 +103,15 @@ body {
 
 	line-height: var(--line-height-body);
 	letter-spacing: var(--letter-spacing-body);
+
+	pointer-events: none;
+}
+
+/* Explicitly permitted pointer interaction */
+
+.is-interactive,
+.is-interactive * {
+	pointer-events: auto;
 }
 
 /* Headings */
@@ -219,3 +232,4 @@ strong {
 		--layout-section-gap: clamp(4rem, 8vw, 5.5rem);
 	}
 }
+

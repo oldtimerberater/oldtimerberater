@@ -1,6 +1,9 @@
+<script>
+	import contact from '#lib/config/contact.json';
+</script>
+
 <svelte:head>
 	<title>Private Enquiries — Independent Advisory</title>
-	<meta name="robots" content="noindex" />
 </svelte:head>
 
 <main class="contact-page layout-grid">
@@ -8,11 +11,20 @@
 
 	<div class="contact-content layout-reading">
 		<address>
-			<p>Email: [email address]</p>
-			<p>Telephone: [telephone number]</p>
+			<p>
+				<a class="is-interactive" href={`mailto:${contact.email}`}>
+					{contact.email}
+				</a>
+			</p>
+
+			<p>
+				<a class="is-interactive" href={`tel:${contact.phone.replaceAll(' ', '')}`}>
+					{contact.phone}
+				</a>
+			</p>
 		</address>
 
-		<p>Acquisition objectives and initial enquiries are treated in confidence.</p>
+		<p>I will treat your enquiry and any information you share with me in confidence.</p>
 	</div>
 </main>
 
@@ -23,14 +35,10 @@
 		row-gap: clamp(3rem, 6vw, 5rem);
 	}
 
-	/* Page heading */
-
 	.contact-page > h1 {
 		grid-column: 1 / span 4;
 		margin: 0;
 	}
-
-	/* Contact information */
 
 	.contact-content {
 		grid-column: 5 / span 7;
@@ -50,8 +58,6 @@
 		margin-block-end: 0;
 	}
 
-	/* Tablet */
-
 	@media (max-width: 64rem) {
 		.contact-page > h1 {
 			grid-column: 1 / span 2;
@@ -61,8 +67,6 @@
 			grid-column: 3 / -1;
 		}
 	}
-
-	/* Mobile */
 
 	@media (max-width: 48rem) {
 		.contact-page > h1,
