@@ -1,22 +1,221 @@
+@import '@fontsource-variable/roboto-flex/full.css';
+
 :root {
-    --color-background: #f5f3ee;
-    --color-text: #242522;
-    --color-secondary: #696b66;
+	/* Colours */
 
-    --font-serif: 'Literata', Georgia, serif;
-    --font-sans: 'IBM Plex Sans', sans-serif;
+	--color-background: #f5f3ee;
+	--color-text: #242522;
+	--color-secondary: #696b66;
+
+	/* Font family */
+
+	--font-family: 'Roboto Flex Variable', sans-serif;
+
+	/* Font sizes */
+
+	--font-size-body: clamp(1.0625rem, calc(1rem + 0.2vw), 1.125rem);
+	--font-size-cover: clamp(3rem, calc(2rem + 4vw), 5.5rem);
+	--font-size-page: clamp(2.5rem, calc(1.8rem + 2.3vw), 4rem);
+	--font-size-section: clamp(1.875rem, calc(1.5rem + 1vw), 2.375rem);
+	--font-size-subsection: clamp(1.25rem, calc(1.1rem + 0.4vw), 1.5rem);
+	--font-size-cover-description: clamp(1.125rem, calc(0.9rem + 0.6vw), 1.5rem);
+	--font-size-navigation: clamp(0.875rem, calc(0.8rem + 0.15vw), 0.9375rem);
+
+	/* Font weights */
+
+	--font-weight-body: 400;
+	--font-weight-cover: 300;
+	--font-weight-page: 350;
+	--font-weight-section: 400;
+	--font-weight-subsection: 400;
+	--font-weight-navigation: 500;
+	--font-weight-emphasis: 600;
+
+	/* Variable font width axis */
+
+	--font-width-body: 100;
+	--font-width-cover: 100;
+	--font-width-heading: 100;
+	--font-width-navigation: 100;
+
+	/* Variable font grade axis */
+
+	--font-grade-body: 0;
+	--font-grade-cover: 0;
+	--font-grade-heading: 0;
+	--font-grade-navigation: 0;
+
+	/* Line heights */
+
+	--line-height-body: 1.6;
+	--line-height-cover: 1.1;
+	--line-height-heading: 1.15;
+	--line-height-navigation: 1.3;
+
+	/* Letter spacing */
+
+	--letter-spacing-body: normal;
+	--letter-spacing-heading: -0.01em;
+	--letter-spacing-navigation: normal;
+
+	/* Layout */
+
+	--layout-max-width: 80rem;
+	--layout-reading-max-width: 42.5rem;
+
+	--layout-columns: 12;
+	--layout-column-gap: 1.5rem;
+
+	--layout-inline-margin: clamp(3rem, 6vw, 6rem);
+	--layout-section-gap: clamp(7.5rem, 10vw, 10rem);
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
+/* Box model */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
+
+/* Document */
 
 html {
-    background: var(--color-background);
+	background: var(--color-background);
 }
 
 body {
-    margin: 0;
-    color: var(--color-text);
-    font-family: var(--font-sans);
+	margin: 0;
+	color: var(--color-text);
+
+	font-family: var(--font-family);
+	font-size: var(--font-size-body);
+	font-weight: var(--font-weight-body);
+	font-optical-sizing: auto;
+
+	font-variation-settings:
+		'wdth' var(--font-width-body),
+		'GRAD' var(--font-grade-body);
+
+	line-height: var(--line-height-body);
+	letter-spacing: var(--letter-spacing-body);
+}
+
+/* Headings */
+
+h1,
+h2,
+h3 {
+	line-height: var(--line-height-heading);
+	letter-spacing: var(--letter-spacing-heading);
+
+	font-variation-settings:
+		'wdth' var(--font-width-heading),
+		'GRAD' var(--font-grade-heading);
+}
+
+h1 {
+	font-size: var(--font-size-page);
+	font-weight: var(--font-weight-page);
+}
+
+h2 {
+	font-size: var(--font-size-section);
+	font-weight: var(--font-weight-section);
+}
+
+h3 {
+	font-size: var(--font-size-subsection);
+	font-weight: var(--font-weight-subsection);
+}
+
+/* Homepage cover */
+
+main > header > h1 {
+	font-size: var(--font-size-cover);
+	font-weight: var(--font-weight-cover);
+	line-height: var(--line-height-cover);
+
+	font-variation-settings:
+		'wdth' var(--font-width-cover),
+		'GRAD' var(--font-grade-cover);
+}
+
+main > header > p {
+	font-size: var(--font-size-cover-description);
+}
+
+/* Navigation typography */
+
+nav {
+	font-size: var(--font-size-navigation);
+	font-weight: var(--font-weight-navigation);
+	line-height: var(--line-height-navigation);
+	letter-spacing: var(--letter-spacing-navigation);
+
+	font-variation-settings:
+		'wdth' var(--font-width-navigation),
+		'GRAD' var(--font-grade-navigation);
+}
+
+/* Emphasis */
+
+strong {
+	font-weight: var(--font-weight-emphasis);
+}
+
+/* Layout containers */
+
+.layout-container,
+.layout-grid {
+	width: min(
+		calc(100% - var(--layout-inline-margin) - var(--layout-inline-margin)),
+		var(--layout-max-width)
+	);
+
+	margin-inline: auto;
+}
+
+/* Shared CSS Grid */
+
+.layout-grid {
+	display: grid;
+
+	grid-template-columns: repeat(
+		var(--layout-columns),
+		minmax(0, 1fr)
+	);
+
+	column-gap: var(--layout-column-gap);
+}
+
+/* Reading column */
+
+.layout-reading {
+	min-width: 0;
+	max-width: var(--layout-reading-max-width);
+}
+
+/* Tablet */
+
+@media (max-width: 64rem) {
+	:root {
+		--layout-columns: 6;
+		--layout-column-gap: 1.25rem;
+
+		--layout-inline-margin: 2rem;
+		--layout-section-gap: 6rem;
+	}
+}
+
+/* Mobile */
+
+@media (max-width: 48rem) {
+	:root {
+		--layout-columns: 1;
+		--layout-column-gap: 0;
+
+		--layout-inline-margin: 1.5rem;
+		--layout-section-gap: clamp(4rem, 8vw, 5.5rem);
+	}
 }
