@@ -1,46 +1,45 @@
 <svelte:head>
 	<title>The Advisor — Independent Advisory</title>
+	<meta
+		name="description"
+		content="Meet Andrey, an independent advisor based in Berlin, Germany, working with collectors across Europe and the United States."
+	/>
 </svelte:head>
 
 <main class="advisor-page layout-grid">
 	<h1>The Advisor</h1>
+
+	<section id="advisor" class="advisor-section" aria-labelledby="advisor-title">
+		<h2 id="advisor-title">Andrey</h2>
+
+		<div class="advisor-content layout-reading">
+			<p>I am based in Berlin, Germany.</p>
+			<p>
+				My work involves collectors, owners and specialists across Europe and the United States.
+			</p>
+
+			<h3>Languages</h3>
+			<ul>
+				<li>English</li>
+				<li>German</li>
+				<li>Russian</li>
+			</ul>
+		</div>
+	</section>
 
 	<section id="discretion" class="advisor-section" aria-labelledby="discretion-title">
 		<h2 id="discretion-title">Discretion</h2>
 
 		<div class="advisor-content layout-reading">
 			<p>
-				Collector identities, mandates, negotiations and completed acquisitions remain confidential.
+				I treat your enquiries, the details of your search, negotiations and acquisitions as
+				confidential.
 			</p>
 
-			<p>Information is disclosed only with the collector’s express approval.</p>
-
-			<p>Initial enquiries are treated with the same discretion as active mandates.</p>
-		</div>
-	</section>
-
-	<section id="advisor" class="advisor-section" aria-labelledby="advisor-title">
-		<h2 id="advisor-title">Andrei</h2>
-
-		<div class="advisor-content layout-reading">
-			<p>Based in Berlin, Germany.</p>
-
-			<p>Working with collectors and market participants across Europe and the United States.</p>
-
-			<h3>Languages</h3>
-
-			<ul>
-				<li>English</li>
-				<li>German</li>
-				<li>Russian</li>
-			</ul>
-
-			<!--
-				Add a concise, factual professional biography
-				once Andrei's relevant experience has been verified.
-
-				His surname must not appear in editorial content.
-			-->
+			<p>
+				Before contacting owners, sellers or specialists, we will agree what information about you
+				and your requirements may be shared.
+			</p>
 		</div>
 	</section>
 </main>

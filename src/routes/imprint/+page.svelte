@@ -1,6 +1,10 @@
+<script>
+	import legal from '#lib/config/legal.json';
+	import contact from '#lib/config/contact.json';
+</script>
+
 <svelte:head>
 	<title>Imprint — Independent Advisory</title>
-	<meta name="robots" content="noindex" />
 </svelte:head>
 
 <main class="imprint-page layout-grid">
@@ -10,40 +14,48 @@
 		<section aria-labelledby="provider-title">
 			<h2 id="provider-title">Service Provider</h2>
 
-			<!--
-				Full legal name
-				Legal form
-				Business address
-			-->
+			<p>{legal.legalName}</p>
+			<p>Legal form: {legal.legalForm}</p>
+			<p>Berlin, Germany</p>
 		</section>
 
 		<section aria-labelledby="contact-title">
 			<h2 id="contact-title">Contact</h2>
 
-			<!--
-				Email address
-				Telephone number
-			-->
+			<address>
+				<p>
+					<a class="is-interactive" href={`mailto:${contact.email}`}>
+						{contact.email}
+					</a>
+				</p>
+
+				<p>
+					<a class="is-interactive" href={`tel:${contact.phone.replaceAll(' ', '')}`}>
+						{contact.phone}
+					</a>
+				</p>
+			</address>
 		</section>
 
 		<section aria-labelledby="registration-title">
-			<h2 id="registration-title">Registration and Regulatory Information</h2>
+			<h2 id="registration-title">Business Identification</h2>
 
-			<!--
-				Applicable business register and registration number
-				VAT identification number or business identification number, if applicable
-				Regulatory authority, if applicable
-			-->
+			<p>Tax identification: {legal.taxIdentificationNumber}</p>
 		</section>
 
 		<section aria-labelledby="services-title">
-			<h2 id="services-title">Advisory Services and Remuneration</h2>
+			<h2 id="services-title">Advisory Services</h2>
 
-			<!--
-				Legally accurate description of the advisory's role
-				Basis of remuneration
-				Disclosure of third-party commissions or economic interests
-			-->
+			<p>
+				I provide research, assessment and acquisition advisory services concerning historically
+				significant motor cars.
+			</p>
+
+			<p>
+				My remuneration may consist of fees paid by the collector, commissions paid by the seller,
+				or both. Any seller commission or other economic interest connected with an acquisition will
+				be disclosed to the collector.
+			</p>
 		</section>
 	</div>
 </main>
@@ -58,8 +70,6 @@
 		grid-column: 2 / -1;
 		margin: 0;
 	}
-
-	/* Legal content */
 
 	.imprint-content {
 		grid-column: 2 / span 8;
@@ -77,7 +87,9 @@
 		margin-block-end: 0;
 	}
 
-	/* Tablet */
+	.imprint-content address {
+		font-style: normal;
+	}
 
 	@media (max-width: 64rem) {
 		.imprint-page > h1,
@@ -85,8 +97,6 @@
 			grid-column: 1 / -1;
 		}
 	}
-
-	/* Mobile */
 
 	@media (max-width: 48rem) {
 		.imprint-page {
