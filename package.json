@@ -43,5 +43,8 @@
 		"vite": "^8.3.0",
 		"vitest": "^4.1.8",
 		"vitest-browser-svelte": "^2.1.1"
+	},
+	"dependencies": {
+		"@fontsource-variable/roboto-flex": "^5.3.0"
 	}
 }
