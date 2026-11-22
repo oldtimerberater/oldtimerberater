@@ -18,21 +18,21 @@
 			</a>
 			<a
 				class="is-interactive"
-				href="/method"
+				href="/method/"
 				aria-current={page.route.id === '/method' ? 'page' : undefined}
 			>
 				Method
 			</a>
 			<a
 				class="is-interactive"
-				href="/advisor"
+				href="/advisor/"
 				aria-current={page.route.id === '/advisor' ? 'page' : undefined}
 			>
 				Advisor
 			</a>
 			<a
 				class="is-interactive"
-				href="/contact"
+				href="/contact/"
 				aria-current={page.route.id === '/contact' ? 'page' : undefined}
 			>
 				Contact
@@ -44,8 +44,8 @@
 
 	<footer class="site-footer">
 		<nav class="legal-navigation layout-container" aria-label="Legal information">
-			<a class="is-interactive" href="/imprint">Imprint</a>
-			<a class="is-interactive" href="/privacy">Privacy Policy</a>
+			<a class="is-interactive" href="/imprint/">Imprint</a>
+			<a class="is-interactive" href="/privacy/">Privacy Policy</a>
 		</nav>
 	</footer>
 </div>
