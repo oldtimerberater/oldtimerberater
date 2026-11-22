@@ -5,6 +5,10 @@
 
 <svelte:head>
 	<title>Imprint — Independent Advisory</title>
+	<meta
+		name="description"
+		content="Legal information and contact details for Andrey Paymushin, providing research, assessment and acquisition advisory services for historically significant motor cars."
+	/>
 </svelte:head>
 
 <main class="imprint-page layout-grid">
