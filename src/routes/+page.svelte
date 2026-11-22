@@ -1,9 +1,25 @@
+<script>
+	const service = {
+		'@context': 'https://schema.org',
+		'@type': 'Service',
+		name: 'Independent Advisory for Collectors of Historically Significant Motor Cars',
+		description:
+			'Research, assessment and acquisition advisory for collectors of historically significant motor cars.',
+		serviceType: 'Motor car acquisition advisory',
+		areaServed: ['Europe', 'United States'],
+		url: 'https://oldtimerberater.eu/'
+	};
+
+	const structuredData = JSON.stringify(service).replace(/</g, '\\u003c');
+</script>
+
 <svelte:head>
 	<title>Independent Advisory for Collectors of Historically Significant Motor Cars</title>
 	<meta
 		name="description"
 		content="Independent advisory for collectors of historically significant motor cars. Research, provenance evaluation and acquisition advice across Europe and the United States."
 	/>
+	{@html `<script type="application/ld+json">${structuredData}</script>`}
 </svelte:head>
 
 <main class="home-page layout-grid">
