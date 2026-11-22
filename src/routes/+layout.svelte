@@ -1,6 +1,5 @@
 <script>
 	import '../app.css';
-	import favicon from '#lib/assets/favicon.svg';
 	import { page } from '$app/state';
 
 	/** @type {{children: import('svelte').Snippet}} */
@@ -8,7 +7,6 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
 	<link rel="canonical" href={`https://oldtimerberater.eu${page.url.pathname}`} />
 </svelte:head>
 
