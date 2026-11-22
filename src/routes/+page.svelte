@@ -1,16 +1,45 @@
 <script>
-	const service = {
-		'@context': 'https://schema.org',
-		'@type': 'Service',
-		name: 'Independent Advisory for Collectors of Historically Significant Motor Cars',
-		description:
-			'Research, assessment and acquisition advisory for collectors of historically significant motor cars.',
-		serviceType: 'Motor car acquisition advisory',
-		areaServed: ['Europe', 'United States'],
-		url: 'https://oldtimerberater.eu/'
-	};
+	import contact from '#lib/config/contact.json';
 
-	const structuredData = JSON.stringify(service).replace(/</g, '\\u003c');
+	const url = 'https://oldtimerberater.eu/';
+
+	const structuredData = JSON.stringify({
+		'@context': 'https://schema.org',
+		'@graph': [
+			{
+				'@type': 'WebSite',
+				'@id': `${url}#website`,
+				name: 'Independent Advisory',
+				url,
+				inLanguage: 'en',
+				publisher: {
+					'@id': `${url}#organization`
+				}
+			},
+			{
+				'@type': 'Organization',
+				'@id': `${url}#organization`,
+				name: 'Independent Advisory',
+				url,
+				description: 'Independent advisory for collectors of historically significant motor cars.',
+				email: contact.email,
+				telephone: contact.phone.replaceAll(' ', '')
+			},
+			{
+				'@type': 'Service',
+				'@id': `${url}#service`,
+				name: 'Independent Advisory for Collectors of Historically Significant Motor Cars',
+				serviceType: 'Motor car acquisition advisory',
+				description:
+					'Research, assessment and acquisition advisory for collectors of historically significant motor cars.',
+				provider: {
+					'@id': `${url}#organization`
+				},
+				areaServed: ['Europe', 'United States'],
+				url
+			}
+		]
+	}).replace(/</g, '\\u003c');
 </script>
 
 <svelte:head>
