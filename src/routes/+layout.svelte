@@ -1,7 +1,5 @@
 <script>
-	import { resolve } from '$app/paths';
-	import { page } from '$app/state';
-	import { locales, localizeHref } from '#lib/paraglide/runtime.js';
+	import '../app.css';
 	import favicon from '#lib/assets/favicon.svg';
 
 	/** @type {{children: import('svelte').Snippet}} */
@@ -13,9 +11,3 @@
 </svelte:head>
 
 {@render children()}
-
-<div style="display:none">
-	{#each locales as locale (locale)}
-		<a href={resolve(localizeHref(page.url.pathname, { locale }))}>{locale}</a>
-	{/each}
-</div>
