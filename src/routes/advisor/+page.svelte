@@ -1,16 +1,33 @@
+<script>
+	import { entities, ids, jsonLd, pageEntity } from '#lib/seo/structured-data.js';
+
+	const structuredData = jsonLd([
+		entities.advisor,
+		pageEntity({
+			path: '/advisor/',
+			name: 'The Advisor',
+			description:
+				'Meet Andrey Paymushin, an independent advisor based in Berlin, Germany, working with collectors across Europe and the United States.',
+			type: 'AboutPage',
+			mainEntity: ids.advisor
+		})
+	]);
+</script>
+
 <svelte:head>
 	<title>The Advisor — Independent Advisory</title>
 	<meta
 		name="description"
-		content="Meet Andrey, an independent advisor based in Berlin, Germany, working with collectors across Europe and the United States."
+		content="Meet Andrey Paymushin, an independent advisor based in Berlin, Germany, working with collectors across Europe and the United States."
 	/>
+	{@html `<script type="application/ld+json">${structuredData}</script>`}
 </svelte:head>
 
 <main class="advisor-page layout-grid">
 	<h1>The Advisor</h1>
 
 	<section id="advisor" class="advisor-section" aria-labelledby="advisor-title">
-		<h2 id="advisor-title">Andrey</h2>
+		<h2 id="advisor-title">Andrey Paymushin</h2>
 
 		<div class="advisor-content layout-reading">
 			<p>I am based in Berlin, Germany.</p>

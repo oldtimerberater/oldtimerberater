@@ -1,6 +1,17 @@
 <script>
 	import legal from '#lib/config/legal.json';
 	import contact from '#lib/config/contact.json';
+	import { ids, jsonLd, pageEntity } from '#lib/seo/structured-data.js';
+
+	const structuredData = jsonLd([
+		pageEntity({
+			path: '/imprint/',
+			name: 'Imprint',
+			description:
+				'Legal information and contact details for Andrey Paymushin, providing research, assessment and acquisition advisory services for historically significant motor cars.',
+			mainEntity: ids.advisor
+		})
+	]);
 </script>
 
 <svelte:head>
@@ -9,6 +20,7 @@
 		name="description"
 		content="Legal information and contact details for Andrey Paymushin, providing research, assessment and acquisition advisory services for historically significant motor cars."
 	/>
+	{@html `<script type="application/ld+json">${structuredData}</script>`}
 </svelte:head>
 
 <main class="imprint-page layout-grid">
