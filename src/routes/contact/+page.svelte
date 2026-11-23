@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Private Enquiries</title>
+	<title>Private Enquiries — Historic Motor Car Advisory</title>
 	<meta
 		name="description"
 		content="Private enquiries concerning historically significant motor cars, including research, assessment and acquisition advice. Contact by email or telephone."
