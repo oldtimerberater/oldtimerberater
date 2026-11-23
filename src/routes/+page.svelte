@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-	<title>Independent Advisory for Collectors of Historically Significant Motor Cars</title>
+	<title>Independent Historic Motor Car Acquisition Advisory</title>
 	<meta
 		name="description"
 		content="Independent advisory for collectors of historically significant motor cars. Research, provenance evaluation and acquisition advice across Europe and the United States."
@@ -31,17 +31,24 @@
 
 	<section id="advisory" class="home-sections" aria-labelledby="advisory-title">
 		<h2 id="advisory-title">The Search</h2>
-
+		<p>
+			Independent research, provenance assessment and acquisition advisory for collectors of
+			historically significant motor cars.
+		</p>
 		<p>
 			I need to understand the particular motor car you want to acquire: its model, coachwork and
 			specification, the provenance and originality you expect, its condition and how you intend to
 			use it.
 		</p>
-
 		<p>
 			I search across Europe and the United States, examine promising cars and their documentation,
 			and share my findings with you. We can discuss which examples deserve closer examination and
 			what remains to be verified.
+		</p>
+		<p>
+			Further details of my
+			<a class="is-interactive" href="/method/">research and assessment approach</a>
+			are available.
 		</p>
 	</section>
 </main>

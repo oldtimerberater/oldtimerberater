@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>The Advisor</title>
+	<title>Independent Historic Motor Car Advisor — Berlin</title>
 	<meta
 		name="description"
 		content="Meet Andrey Paymushin, an independent advisor based in Berlin, Germany, working with collectors across Europe and the United States."

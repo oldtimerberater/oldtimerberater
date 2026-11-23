@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Method</title>
+	<title>Historic Motor Car Research, Provenance & Assessment</title>
 	<meta
 		name="description"
 		content="How I research, examine and assess historically significant motor cars, from establishing your requirements to assisting with an acquisition."
@@ -119,6 +119,10 @@
 				My involvement can extend to negotiations, examination of the relevant documents and
 				practical arrangements for acquisition and transfer. We agree on the extent of this
 				assistance according to the circumstances of the particular car.
+			</p>
+			<p>
+				If you wish to discuss a possible engagement, you may
+				<a class="is-interactive" href="/contact/">make a private enquiry</a>.
 			</p>
 		</section>
 	</div>
