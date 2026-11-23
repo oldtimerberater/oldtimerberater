@@ -3,6 +3,7 @@
 	import { entities, ids, jsonLd, pageEntity } from '#lib/seo/structured-data.js';
 
 	const structuredData = jsonLd([
+		entities.business,
 		entities.contact,
 		pageEntity({
 			path: '/contact/',

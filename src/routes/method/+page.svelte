@@ -1,7 +1,8 @@
 <script>
-	import { ids, jsonLd, pageEntity } from '#lib/seo/structured-data.js';
+	import { entities, ids, jsonLd, pageEntity } from '#lib/seo/structured-data.js';
 
 	const structuredData = jsonLd([
+		entities.service,
 		pageEntity({
 			path: '/method/',
 			name: 'Method',

@@ -8,7 +8,7 @@
 			name: 'The Advisor',
 			description:
 				'Meet Andrey Paymushin, an independent advisor based in Berlin, Germany, working with collectors across Europe and the United States.',
-			type: 'AboutPage',
+			type: 'ProfilePage',
 			mainEntity: ids.advisor
 		})
 	]);

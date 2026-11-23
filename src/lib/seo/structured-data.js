@@ -1,3 +1,4 @@
+
 import contact from '#lib/config/contact.json';
 import legal from '#lib/config/legal.json';
 
@@ -5,6 +6,7 @@ export const siteUrl = 'https://oldtimerberater.eu/';
 
 export const ids = {
   website: `${siteUrl}#website`,
+  business: `${siteUrl}#business`,
   advisor: `${siteUrl}#advisor`,
   service: `${siteUrl}#service`,
   offer: `${siteUrl}#offer`,
@@ -40,9 +42,29 @@ export const entities = {
     '@type': 'WebSite',
     '@id': ids.website,
     name: 'Independent Advisory',
+    alternateName: 'oldtimerberater.eu',
     url: siteUrl,
     inLanguage: 'en',
-    publisher: ref(ids.advisor)
+    publisher: ref(ids.business)
+  },
+
+  business: {
+    '@type': 'LocalBusiness',
+    '@id': ids.business,
+    name: legal.legalName,
+    legalName: legal.legalName,
+    url: siteUrl,
+    description:
+      'Independent research, assessment and acquisition advisory for collectors of historically significant motor cars.',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Berlin',
+      addressCountry: 'DE'
+    },
+    email: contact.email,
+    telephone: contact.phone.replaceAll(' ', ''),
+    founder: ref(ids.advisor),
+    contactPoint: ref(ids.contact)
   },
 
   advisor: {
@@ -58,6 +80,7 @@ export const entities = {
       name: 'Berlin, Germany'
     },
     knowsLanguage: ['en', 'de', 'ru'],
+    worksFor: ref(ids.business),
     contactPoint: ref(ids.contact)
   },
 
@@ -78,7 +101,7 @@ export const entities = {
     serviceType: 'Historic motor car advisory',
     description:
       'Independent research, assessment and acquisition advisory for collectors of historically significant motor cars.',
-    provider: ref(ids.advisor),
+    provider: ref(ids.business),
     audience: {
       '@type': 'Audience',
       audienceType: 'Collectors of historically significant motor cars'
@@ -94,7 +117,7 @@ export const entities = {
     '@id': ids.offer,
     name: 'Individual Advisory Engagement',
     url: contactUrl,
-    offeredBy: ref(ids.advisor),
+    offeredBy: ref(ids.business),
     itemOffered: ref(ids.service)
   },
 
@@ -107,12 +130,12 @@ export const entities = {
       '@id': `${siteUrl}#offer-${service.id}`,
       name: service.name,
       url: contactUrl,
-      offeredBy: ref(ids.advisor),
+      offeredBy: ref(ids.business),
       itemOffered: {
         '@type': 'Service',
         '@id': `${siteUrl}#service-${service.id}`,
         name: service.name,
-        provider: ref(ids.advisor),
+        provider: ref(ids.business),
         areaServed: 'Worldwide'
       }
     }))
@@ -148,3 +171,4 @@ export function jsonLd(entities) {
     '@graph': entities
   }).replace(/</g, '\\u003c');
 }
+

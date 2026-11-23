@@ -3,6 +3,7 @@
 
 	const structuredData = jsonLd([
 		entities.website,
+		entities.business,
 		entities.advisor,
 		entities.contact,
 		entities.service,
