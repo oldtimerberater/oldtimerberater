@@ -1,5 +1,19 @@
 <script>
 	import contact from '#lib/config/contact.json';
+	import { entities, ids, jsonLd, pageEntity } from '#lib/seo/structured-data.js';
+
+	const structuredData = jsonLd([
+		entities.contact,
+		pageEntity({
+			path: '/contact/',
+			name: 'Private Enquiries',
+			description:
+				'Private enquiries concerning historically significant motor cars, including research, assessment and acquisition advice. Contact by email or telephone.',
+			type: 'ContactPage',
+			mainEntity: ids.contact,
+			about: ids.service
+		})
+	]);
 </script>
 
 <svelte:head>
@@ -8,6 +22,7 @@
 		name="description"
 		content="Private enquiries concerning historically significant motor cars, including research, assessment and acquisition advice. Contact by email or telephone."
 	/>
+	{@html `<script type="application/ld+json">${structuredData}</script>`}
 </svelte:head>
 
 <main class="contact-page layout-grid">

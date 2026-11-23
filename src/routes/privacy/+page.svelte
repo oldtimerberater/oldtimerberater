@@ -1,6 +1,16 @@
 <script>
 	import legal from '#lib/config/legal.json';
 	import contact from '#lib/config/contact.json';
+	import { jsonLd, pageEntity } from '#lib/seo/structured-data.js';
+
+	const structuredData = jsonLd([
+		pageEntity({
+			path: '/privacy/',
+			name: 'Privacy Policy',
+			description:
+				'Information about personal data processing, website access, correspondence and your rights under the GDPR.'
+		})
+	]);
 </script>
 
 <svelte:head>
@@ -9,6 +19,7 @@
 		name="description"
 		content="Information about personal data processing, website access, correspondence and your rights under the GDPR."
 	/>
+	{@html `<script type="application/ld+json">${structuredData}</script>`}
 </svelte:head>
 
 <main class="privacy-page layout-grid">
@@ -29,7 +40,7 @@
 			</p>
 		</section>
 
-		<section aria-labelledby="access-title">
+		<section id="access" aria-labelledby="access-title">
 			<h2 id="access-title">Website Access</h2>
 
 			<p>

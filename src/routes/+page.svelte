@@ -1,45 +1,21 @@
 <script>
-	import contact from '#lib/config/contact.json';
+	import { entities, ids, jsonLd, pageEntity } from '#lib/seo/structured-data.js';
 
-	const url = 'https://oldtimerberater.eu/';
-
-	const structuredData = JSON.stringify({
-		'@context': 'https://schema.org',
-		'@graph': [
-			{
-				'@type': 'WebSite',
-				'@id': `${url}#website`,
-				name: 'Independent Advisory',
-				url,
-				inLanguage: 'en',
-				publisher: {
-					'@id': `${url}#organization`
-				}
-			},
-			{
-				'@type': 'Organization',
-				'@id': `${url}#organization`,
-				name: 'Independent Advisory',
-				url,
-				description: 'Independent advisory for collectors of historically significant motor cars.',
-				email: contact.email,
-				telephone: contact.phone.replaceAll(' ', '')
-			},
-			{
-				'@type': 'Service',
-				'@id': `${url}#service`,
-				name: 'Independent Advisory for Collectors of Historically Significant Motor Cars',
-				serviceType: 'Motor car acquisition advisory',
-				description:
-					'Research, assessment and acquisition advisory for collectors of historically significant motor cars.',
-				provider: {
-					'@id': `${url}#organization`
-				},
-				areaServed: ['Europe', 'United States'],
-				url
-			}
-		]
-	}).replace(/</g, '\\u003c');
+	const structuredData = jsonLd([
+		entities.website,
+		entities.advisor,
+		entities.contact,
+		entities.service,
+		entities.offer,
+		entities.catalog,
+		pageEntity({
+			path: '/',
+			name: 'Independent Advisory for Collectors of Historically Significant Motor Cars',
+			description:
+				'Independent advisory for collectors of historically significant motor cars. Research, provenance evaluation and acquisition advice across Europe and the United States.',
+			mainEntity: ids.service
+		})
+	]);
 </script>
 
 <svelte:head>
