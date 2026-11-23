@@ -1,21 +1,13 @@
 <script>
-	import { entities, ids, jsonLd, pageEntity } from '#lib/seo/structured-data.js';
+	import { entities, jsonLd } from '#lib/seo/structured-data.js';
 
 	const structuredData = jsonLd([
-		entities.website,
 		entities.business,
 		entities.advisor,
 		entities.contact,
 		entities.service,
 		entities.offer,
-		entities.catalog,
-		pageEntity({
-			path: '/',
-			name: 'Independent Advisory for Collectors of Historically Significant Motor Cars',
-			description:
-				'Independent advisory for collectors of historically significant motor cars. Research, provenance evaluation and acquisition advice across Europe and the United States.',
-			mainEntity: ids.service
-		})
+		entities.catalog
 	]);
 </script>
 
