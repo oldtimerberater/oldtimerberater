@@ -1,5 +1,6 @@
 <script>
 	import '../app.css';
+	import robotoFlexUrl from '@fontsource-variable/roboto-flex/files/roboto-flex-latin-full-normal.woff2?url';
 	import { page } from '$app/state';
 
 	/** @type {{children: import('svelte').Snippet}} */
@@ -7,36 +8,31 @@
 </script>
 
 <svelte:head>
+	<link rel="preload" href={robotoFlexUrl} as="font" type="font/woff2" crossorigin="anonymous" />
 	<link rel="canonical" href={`https://oldtimerberater.eu${page.url.pathname}`} />
 </svelte:head>
 
 <div class="site-shell">
 	<header class="site-header">
 		<nav class="primary-navigation layout-container" aria-label="Primary navigation">
-			<a class="is-interactive" href="/" aria-current={page.route.id === '/' ? 'page' : undefined}>
-				Home
-			</a>
+			<a class="is-interactive" href="/" aria-current={page.route.id === '/' ? 'page' : undefined}
+				>Home</a
+			>
 			<a
 				class="is-interactive"
 				href="/method/"
-				aria-current={page.route.id === '/method' ? 'page' : undefined}
+				aria-current={page.route.id === '/method' ? 'page' : undefined}>Method</a
 			>
-				Method
-			</a>
 			<a
 				class="is-interactive"
 				href="/advisor/"
-				aria-current={page.route.id === '/advisor' ? 'page' : undefined}
+				aria-current={page.route.id === '/advisor' ? 'page' : undefined}>Advisor</a
 			>
-				Advisor
-			</a>
 			<a
 				class="is-interactive"
 				href="/contact/"
-				aria-current={page.route.id === '/contact' ? 'page' : undefined}
+				aria-current={page.route.id === '/contact' ? 'page' : undefined}>Contact</a
 			>
-				Contact
-			</a>
 		</nav>
 	</header>
 
