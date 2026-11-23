@@ -18,7 +18,7 @@
 	<title>Independent Historic Motor Car Advisor — Berlin</title>
 	<meta
 		name="description"
-		content="Meet Andrey Paymushin, an independent advisor based in Berlin, Germany, working with collectors across Europe and the United States."
+		content="Berlin-based independent advisor for collectors of historically significant motor cars. Provenance research, vehicle assessment and acquisition support across Europe and the United States."
 	/>
 	{@html `<script type="application/ld+json">${structuredData}</script>`}
 </svelte:head>

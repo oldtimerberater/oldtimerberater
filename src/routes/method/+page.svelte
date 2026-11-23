@@ -8,7 +8,7 @@
 	<title>Historic Motor Car Research, Provenance & Assessment</title>
 	<meta
 		name="description"
-		content="How I research, examine and assess historically significant motor cars, from establishing your requirements to assisting with an acquisition."
+		content="Historic motor car research and assessment: provenance, documentary evidence, originality, restoration history and acquisition support."
 	/>
 	{@html `<script type="application/ld+json">${structuredData}</script>`}
 </svelte:head>
@@ -69,9 +69,10 @@
 			</p>
 
 			<p>
-				I compare information from different sources and investigate discrepancies. Where the
-				documentation is incomplete, I explain what can be established, which conclusions remain
-				uncertain and what further research may be possible.
+				I compare information from different sources and investigate discrepancies. I distinguish
+				documented facts from historical interpretations and claims that cannot be substantiated.
+				Where the records are incomplete or contradictory, I explain what can be established, what
+				remains uncertain and which questions warrant further investigation.
 			</p>
 		</section>
 

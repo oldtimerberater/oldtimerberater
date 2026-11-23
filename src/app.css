@@ -1,4 +1,3 @@
-
 @import '@fontsource-variable/roboto-flex/full.css';
 
 :root {
@@ -194,10 +193,7 @@ strong {
 .layout-grid {
 	display: grid;
 
-	grid-template-columns: repeat(
-		var(--layout-columns),
-		minmax(0, 1fr)
-	);
+	grid-template-columns: repeat(var(--layout-columns), minmax(0, 1fr));
 
 	column-gap: var(--layout-column-gap);
 }
@@ -232,4 +228,3 @@ strong {
 		--layout-section-gap: clamp(4rem, 8vw, 5.5rem);
 	}
 }
-
