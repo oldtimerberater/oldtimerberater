@@ -1,15 +1,19 @@
 <script>
 	import legal from '#lib/config/legal.json';
 	import contact from '#lib/config/contact.json';
-	import { ids, jsonLd, pageEntity } from '#lib/seo/structured-data.js';
+	import { entities, ids, jsonLd, pageEntity } from '#lib/seo/structured-data.js';
 
 	const structuredData = jsonLd([
+		entities.business,
+		entities.advisor,
+		entities.contact,
 		pageEntity({
 			path: '/imprint/',
 			name: 'Imprint',
 			description:
 				'Legal information and contact details for Andrey Paymushin, providing research, assessment and acquisition advisory services for historically significant motor cars.',
-			mainEntity: ids.advisor
+			mainEntity: ids.business,
+			about: ids.advisor
 		})
 	]);
 </script>
