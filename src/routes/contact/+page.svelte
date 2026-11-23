@@ -1,24 +1,12 @@
 <script>
 	import contact from '#lib/config/contact.json';
-	import { entities, ids, jsonLd, pageEntity } from '#lib/seo/structured-data.js';
+	import { entities, jsonLd } from '#lib/seo/structured-data.js';
 
-	const structuredData = jsonLd([
-		entities.business,
-		entities.contact,
-		pageEntity({
-			path: '/contact/',
-			name: 'Private Enquiries',
-			description:
-				'Private enquiries concerning historically significant motor cars, including research, assessment and acquisition advice. Contact by email or telephone.',
-			type: 'ContactPage',
-			mainEntity: ids.contact,
-			about: ids.service
-		})
-	]);
+	const structuredData = jsonLd([entities.business, entities.contact]);
 </script>
 
 <svelte:head>
-	<title>Private Enquiries — Independent Advisory</title>
+	<title>Private Enquiries</title>
 	<meta
 		name="description"
 		content="Private enquiries concerning historically significant motor cars, including research, assessment and acquisition advice. Contact by email or telephone."

@@ -1,20 +1,11 @@
 <script>
-	import { entities, ids, jsonLd, pageEntity } from '#lib/seo/structured-data.js';
+	import { entities, jsonLd } from '#lib/seo/structured-data.js';
 
-	const structuredData = jsonLd([
-		entities.service,
-		pageEntity({
-			path: '/method/',
-			name: 'Method',
-			description:
-				'How I research, examine and assess historically significant motor cars, from establishing your requirements to assisting with an acquisition.',
-			about: ids.service
-		})
-	]);
+	const structuredData = jsonLd([entities.service]);
 </script>
 
 <svelte:head>
-	<title>Method — Independent Advisory</title>
+	<title>Method</title>
 	<meta
 		name="description"
 		content="How I research, examine and assess historically significant motor cars, from establishing your requirements to assisting with an acquisition."

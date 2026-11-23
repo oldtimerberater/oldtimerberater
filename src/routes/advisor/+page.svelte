@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>The Advisor — Independent Advisory</title>
+	<title>The Advisor</title>
 	<meta
 		name="description"
 		content="Meet Andrey Paymushin, an independent advisor based in Berlin, Germany, working with collectors across Europe and the United States."
