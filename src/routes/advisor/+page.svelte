@@ -32,7 +32,8 @@
 		<div class="advisor-content layout-reading">
 			<p>I am based in Berlin, Germany.</p>
 			<p>
-				My work involves collectors, owners and specialists across Europe and the United States.
+				My work brings me into contact with collectors, owners and specialists across Europe and the
+				United States.
 			</p>
 
 			<h3>Languages</h3>
@@ -50,12 +51,14 @@
 		<div class="advisor-content layout-reading">
 			<p>
 				I treat your enquiries, the details of your search, negotiations and acquisitions as
-				confidential.
+				confidential. The same discretion applies to an initial enquiry, before any formal
+				engagement has begun.
 			</p>
 
 			<p>
-				Before contacting owners, sellers or specialists, we will agree what information about you
-				and your requirements may be shared.
+				Before approaching an owner, seller or specialist, we agree what information about you and
+				the motor car you are seeking may be disclosed. I share that information only with your
+				express approval.
 			</p>
 		</div>
 	</section>

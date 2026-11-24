@@ -29,28 +29,50 @@
 		</div>
 	</div>
 
-	<section id="advisory" class="home-sections" aria-labelledby="advisory-title">
-		<h2 id="advisory-title">The Search</h2>
-		<p>
-			Independent research, provenance assessment and acquisition advisory for collectors of
-			historically significant motor cars.
-		</p>
-		<p>
-			I need to understand the particular motor car you want to acquire: its model, coachwork and
-			specification, the provenance and originality you expect, its condition and how you intend to
-			use it.
-		</p>
-		<p>
-			I search across Europe and the United States, examine promising cars and their documentation,
-			and share my findings with you. We can discuss which examples deserve closer examination and
-			what remains to be verified.
-		</p>
-		<p>
-			Further details of my
-			<a class="is-interactive" href="/method/">research and assessment approach</a>
-			are available.
-		</p>
-	</section>
+	<div class="home-sections">
+		<section id="advisory" aria-labelledby="advisory-title">
+			<h2 id="advisory-title">The Advisory</h2>
+
+			<p>
+				The search begins with the motor car you are looking for, not with one that happens to be
+				available for sale.
+			</p>
+
+			<p>
+				I do not maintain an inventory or promote a selection of available cars. Before beginning a
+				search, I want to understand what matters to you: the particular model, coachwork and
+				specification, its provenance and originality, its condition and how you intend to use it.
+			</p>
+
+			<p>
+				I search across Europe and the United States. The purpose is not to find as many candidates
+				as possible, but to identify those worth examining more closely. Finding a promising car is
+				only the beginning. Its history, its condition and the evidence supporting its identity must
+				then be considered.
+			</p>
+
+			<p>
+				You can read more about my
+				<a class="is-interactive" href="/method/">approach to research and assessment</a>.
+			</p>
+		</section>
+
+		<section id="historical-significance" aria-labelledby="historical-significance-title">
+			<h2 id="historical-significance-title">Historical Significance</h2>
+
+			<p>Age alone does not make a motor car historically significant.</p>
+
+			<p>
+				Its importance may lie in its provenance, rarity, coachwork, originality, state of
+				preservation or association with a particular person or event.
+			</p>
+
+			<p>
+				Two motor cars of the same model may have very different histories. Understanding those
+				differences is essential to recognising what makes an individual example worth collecting.
+			</p>
+		</section>
+	</div>
 </main>
 
 <style>
@@ -107,6 +129,10 @@
 
 	.home-sections h2 {
 		margin: 0 0 1.5rem;
+	}
+
+	.home-sections > section + section {
+		margin-block-start: var(--layout-section-gap);
 	}
 
 	.home-sections p {
