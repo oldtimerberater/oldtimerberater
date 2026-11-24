@@ -42,7 +42,7 @@ export const entities = {
   website: {
     '@type': 'WebSite',
     '@id': ids.website,
-    name: m.schema_website_name(),
+    name: m.common_advisory(),
     alternateName: 'oldtimerberater.eu',
     url: siteUrl,
     inLanguage: 'en',
@@ -76,7 +76,7 @@ export const entities = {
     description: m.schema_advisor_description(),
     workLocation: {
       '@type': 'Place',
-      name: m.schema_advisor_location()
+      name: m.common_location()
     },
     knowsLanguage: ['en', 'de', 'ru'],
     worksFor: ref(ids.business),

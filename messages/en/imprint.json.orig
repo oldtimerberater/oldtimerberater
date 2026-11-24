@@ -1,0 +1,12 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"imprint_meta_description": "Legal information and contact details for Andrey Paymushin, providing research, assessment and acquisition advisory services for historically significant motor cars.",
+	"imprint_provider_title": "Service Provider",
+	"imprint_legal_form": "Legal form: {legalForm}",
+	"imprint_contact_title": "Contact",
+	"imprint_registration_title": "Business Identification",
+	"imprint_tax_identification": "Tax identification: {taxIdentificationNumber}",
+	"imprint_services_title": "Advisory Services",
+	"imprint_services_p1": "I provide research, assessment and acquisition advisory services concerning historically significant motor cars.",
+	"imprint_services_p2": "My remuneration may consist of fees paid by the collector, commissions paid by the seller, or both. Any seller commission or other economic interest connected with an acquisition will be disclosed to the collector."
+}

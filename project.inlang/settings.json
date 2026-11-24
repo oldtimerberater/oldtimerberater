@@ -9,6 +9,15 @@
     "./node_modules/@inlang/plugin-m-function-matcher/dist/index.js"
   ],
   "plugin.inlang.messageFormat": {
-    "pathPattern": "./messages/{locale}.json"
+    "pathPattern": [
+      "./messages/{locale}/common.json",
+      "./messages/{locale}/home.json",
+      "./messages/{locale}/method.json",
+      "./messages/{locale}/advisor.json",
+      "./messages/{locale}/contact.json",
+      "./messages/{locale}/imprint.json",
+      "./messages/{locale}/privacy.json",
+      "./messages/{locale}/structured-data.json"
+    ]
   }
 }

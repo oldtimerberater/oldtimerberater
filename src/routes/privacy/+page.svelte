@@ -6,19 +6,19 @@
 </script>
 
 <svelte:head>
-	<title>{m.privacy_meta_title()}</title>
+	<title>{m.common_privacy()}</title>
 	<meta name="description" content={m.privacy_meta_description()} />
 </svelte:head>
 
 <main class="privacy-page layout-grid">
-	<h1>{m.privacy_title()}</h1>
+	<h1>{m.common_privacy()}</h1>
 
 	<div class="privacy-content layout-reading">
 		<section aria-labelledby="controller-title">
 			<h2 id="controller-title">{m.privacy_controller_title()}</h2>
 
 			<p>{legal.legalName}</p>
-			<p>{m.privacy_controller_location()}</p>
+			<p>{m.common_location()}</p>
 
 			<p>
 				<ParaglideMessage message={m.privacy_controller_p1} inputs={{ email: contact.email }}>
