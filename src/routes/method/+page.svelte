@@ -181,7 +181,7 @@
 <style>
 	.method-page {
 		padding-block: clamp(3rem, 6vw, 5rem) var(--layout-section-gap);
-		row-gap: var(--layout-section-gap);
+		row-gap: clamp(3rem, 6vw, 5rem);
 	}
 
 	.method-page > h1 {
