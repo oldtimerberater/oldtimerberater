@@ -32,127 +32,125 @@
 			<h2 id="mandate-title">The Collector’s Mandate</h2>
 
 			<p>
-				Every search begins with understanding the particular motor car you are looking for, and
-				why.
+				The starting point is the particular motor car you have in mind and the qualities that make
+				it interesting to you.
 			</p>
 
 			<p>
-				The maker and model are only the starting point. Period, coachwork, specification,
-				provenance and originality may distinguish one example from another in ways that are
-				important to you.
+				A maker and model give the search its broad outline. Period, coachwork, specification,
+				provenance, originality and restoration history help define the individual example you are
+				seeking.
 			</p>
 
 			<p>
-				We establish your expectations regarding restoration history, condition and intended use,
-				together with the geographical scope, timescale and financial parameters of the search.
+				We discuss your expectations regarding condition and intended use, together with the
+				geographical scope, timescale and financial parameters of the search.
 			</p>
 
-			<p>
-				These requirements guide the decisions that follow. A motor car does not become the right
-				choice simply because it is available.
-			</p>
+			<p>These requirements form the mandate and guide the assessment of each candidate.</p>
 		</section>
 
 		<section id="research" aria-labelledby="research-title">
 			<h2 id="research-title">Research</h2>
 
-			<p>Not every motor car worth considering is publicly offered for sale.</p>
-
 			<p>
-				Depending on what we are looking for, I make enquiries among private owners, collectors,
-				specialist dealers, marque clubs and restorers. Auction offerings, archives and personal
-				contacts may provide further leads.
+				The search may lead through private owners, collectors, specialist dealers, marque clubs,
+				restorers, auction offerings and historical archives.
 			</p>
 
 			<p>
-				The objective is not to assemble a long list of available cars. It is to identify individual
-				examples whose history and characteristics justify closer examination.
+				Depending on the motor car, I pursue enquiries through these sources and investigate leads
+				arising from personal contacts.
 			</p>
 
-			<p>An interesting lead is a starting point for research, not yet a recommendation.</p>
+			<p>
+				When a possible candidate emerges, I establish what can be learned about its history,
+				specification and availability. The findings help us decide whether the car deserves closer
+				examination.
+			</p>
 		</section>
 
 		<section id="evidence" aria-labelledby="evidence-title">
 			<h2 id="evidence-title">Evidence</h2>
 
 			<p>
-				A motor car's represented history must be distinguished from what can actually be
-				established.
+				I examine the records associated with an individual motor car to establish its history and
+				identity.
 			</p>
 
 			<p>
-				Ownership and registration documents, period correspondence, historical photographs,
-				invoices, coachbuilder records and restoration documentation may each contribute to
-				understanding an individual car.
+				Ownership and registration documents, period correspondence, photographs, invoices,
+				coachbuilder records and restoration documentation can each contribute important
+				information.
 			</p>
 
 			<p>
-				I compare the available information, investigate discrepancies and consider whether the
-				evidence supports the history being presented.
+				I compare these sources, investigate discrepancies and consider how the surviving
+				documentation relates to the motor car itself.
 			</p>
 
 			<p>
-				Documented facts, plausible historical interpretations and unsupported claims must remain
-				separate. Where the records are incomplete or contradictory, I explain what remains
-				uncertain and whether further investigation may resolve it.
+				Some conclusions can be firmly established through documentary evidence. Others depend on
+				historical interpretation or require further investigation. I explain these distinctions and
+				the significance of any remaining questions.
 			</p>
 		</section>
 
 		<section id="motor-car" aria-labelledby="motor-car-title">
 			<h2 id="motor-car-title">The Motor Car</h2>
 
-			<p>A motor car's appearance does not necessarily reveal its historical integrity.</p>
+			<p>The motor car itself provides another source of historical evidence.</p>
 
 			<p>
 				Its identity, surviving original components, coachwork, period specification, alterations
-				and restoration history must be considered together with the documentary evidence.
+				and restoration history reveal how the individual car has developed over its lifetime.
 			</p>
 
 			<p>
-				A restoration may produce a beautiful motor car while changing characteristics important to
-				its history. Conversely, signs of age or use may be part of what makes a well-preserved
-				example interesting.
+				I consider these characteristics alongside the documentation and examine how much of the
+				car's historical character has survived.
+			</p>
+
+			<p>
+				Originality, preservation, restoration quality and mechanical condition each require careful
+				consideration. Their importance also depends on the collector's expectations and intended
+				use.
 			</p>
 
 			<p>
 				Where specialist technical examination is appropriate, I can coordinate an inspection and
-				discuss its findings with you.
-			</p>
-
-			<p>
-				The assessment must consider not only what the car is today, but how faithfully it
-				represents its history and how well it meets your requirements.
+				discuss the findings with you.
 			</p>
 		</section>
 
 		<section id="judgement" aria-labelledby="judgement-title">
 			<h2 id="judgement-title">Independent Judgement</h2>
 
-			<p>Research and examination must lead to a recommendation.</p>
-
 			<p>
-				Depending on the evidence and the collector's mandate, that recommendation may be to
-				investigate further, proceed to negotiations, reject the candidate or continue searching.
+				My assessment brings together the motor car's history, its present condition, the available
+				evidence and the requirements established in the collector's mandate.
 			</p>
 
 			<p>
-				I explain the reasons for my judgement, including the strengths of the individual car,
-				uncertainties surrounding its history and any concerns that could affect the acquisition.
+				I explain the strengths of each promising candidate, the questions that deserve attention
+				and the implications of the findings.
 			</p>
 
 			<p>
-				There is no obligation to recommend a purchase. Sometimes continuing the search is the
-				better decision.
+				The resulting recommendation may be to undertake further research, proceed to negotiations,
+				reject the candidate or continue searching.
 			</p>
+
+			<p>I explain the reasons for my judgement so that you can decide how to proceed.</p>
 		</section>
 
 		<section id="acquisition" aria-labelledby="acquisition-title">
 			<h2 id="acquisition-title">The Acquisition</h2>
 
 			<p>
-				When a motor car justifies proceeding, I can assist with communication with its owner or
-				seller, further documentary research, specialist inspections and clarification of
-				outstanding questions.
+				When you decide to pursue a particular motor car, I can assist with communication with its
+				owner or seller, examination of additional records and coordination of specialist
+				inspections.
 			</p>
 
 			<p>
@@ -161,18 +159,18 @@
 			</p>
 
 			<p>
-				The purpose is not to complete a transaction as quickly as possible, but to ensure that the
-				collector understands the material questions before making a decision.
+				Throughout the process, I seek to clarify the material questions concerning the car and its
+				acquisition, allowing you to make an informed decision.
 			</p>
 
 			<p>
-				The extent of my involvement depends on the circumstances of the individual motor car and is
-				agreed with the collector.
+				We agree on the extent of my involvement according to the circumstances of the individual
+				motor car.
 			</p>
 
 			<p>
-				If you wish to discuss a possible engagement, you may
-				<a class="is-interactive" href="/contact/">make a private enquiry</a>.
+				You can <a class="is-interactive" href="/contact/">make a private enquiry</a> to discuss a possible
+				engagement.
 			</p>
 		</section>
 	</div>
