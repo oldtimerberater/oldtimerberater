@@ -39,7 +39,10 @@
 <style>
 	.contact-page {
 		padding-block: clamp(3rem, 6vw, 5rem) var(--layout-section-gap);
+
+		align-content: center;
 		align-items: start;
+
 		row-gap: clamp(3rem, 6vw, 5rem);
 	}
 
@@ -53,18 +56,45 @@
 		min-width: 0;
 	}
 
+	/* Contact details */
+
 	.contact-content address {
+		display: grid;
+		gap: 0.75rem;
+
 		font-style: normal;
+		font-size: clamp(1.125rem, calc(1rem + 0.35vw), 1.375rem);
 	}
 
-	.contact-content address p:first-child {
-		margin-block-start: 0;
+	.contact-content address p {
+		margin: 0;
 	}
+
+	.contact-content address a {
+		color: var(--color-text);
+
+		text-decoration-color: var(--color-secondary);
+		text-decoration-thickness: 1px;
+		text-underline-offset: 0.25em;
+	}
+
+	.contact-content address a:hover {
+		text-decoration-color: currentColor;
+	}
+
+	.contact-content address a:focus-visible {
+		outline: 2px solid currentColor;
+		outline-offset: 4px;
+	}
+
+	/* Confidentiality statement */
 
 	.contact-content > p {
-		margin-block-start: clamp(3rem, 6vw, 5rem);
-		margin-block-end: 0;
+		margin-block: 2.5rem 0;
+		color: var(--color-secondary);
 	}
+
+	/* Tablet */
 
 	@media (max-width: 64rem) {
 		.contact-page > h1 {
@@ -76,7 +106,17 @@
 		}
 	}
 
+	/* Mobile */
+
 	@media (max-width: 48rem) {
+		.contact-page {
+			align-content: start;
+
+			padding-block: clamp(3rem, 9svh, 5rem) var(--layout-section-gap);
+
+			row-gap: clamp(2.5rem, 7vw, 4rem);
+		}
+
 		.contact-page > h1,
 		.contact-content {
 			grid-column: 1 / -1;

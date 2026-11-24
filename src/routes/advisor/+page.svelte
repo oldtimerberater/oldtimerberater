@@ -31,12 +31,14 @@
 
 		<div class="advisor-content layout-reading">
 			<p>I am based in Berlin, Germany.</p>
+
 			<p>
 				My work brings me into contact with collectors, owners and specialists across Europe and the
 				United States.
 			</p>
 
 			<h3>Languages</h3>
+
 			<ul>
 				<li>English</li>
 				<li>German</li>
@@ -66,8 +68,12 @@
 
 <style>
 	.advisor-page {
-		padding-block: clamp(3rem, 6vw, 5rem) var(--layout-section-gap);
-		row-gap: var(--layout-section-gap);
+		padding-block: clamp(3rem, 6vw, 5rem);
+
+		align-content: safe center;
+		align-items: start;
+
+		row-gap: clamp(3rem, 5vw, 5rem);
 	}
 
 	.advisor-page > h1 {
@@ -104,9 +110,31 @@
 		margin-block-end: 0;
 	}
 
+	/* Languages */
+
+	.advisor-content h3 {
+		margin-block: 2rem 0.75rem;
+	}
+
+	.advisor-content ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem 1.5rem;
+
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+		color: var(--color-secondary);
+	}
+
 	/* Tablet */
 
 	@media (max-width: 64rem) {
+		.advisor-page {
+			row-gap: clamp(3rem, 5vw, 4rem);
+		}
+
 		.advisor-section > h2 {
 			grid-column: 1 / span 2;
 		}
@@ -119,6 +147,14 @@
 	/* Mobile */
 
 	@media (max-width: 48rem) {
+		.advisor-page {
+			align-content: start;
+
+			padding-block: clamp(3rem, 9svh, 5rem) var(--layout-section-gap);
+
+			row-gap: 2.5rem;
+		}
+
 		.advisor-section {
 			row-gap: 1.5rem;
 		}
@@ -126,6 +162,10 @@
 		.advisor-section > h2,
 		.advisor-content {
 			grid-column: 1 / -1;
+		}
+
+		.advisor-content h3 {
+			margin-block-start: 1.5rem;
 		}
 	}
 </style>
