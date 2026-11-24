@@ -19,8 +19,15 @@ export default defineConfig({
           filename.split(/[/\\]/).includes('node_modules') ? undefined : true,
         experimental: { async: true }
       },
-      adapter: adapter({ precompress: true }),
-      experimental: { remoteFunctions: true }
+      prerender: {
+        entries: ['*', '/.well-known/security.txt']
+      },
+      adapter: adapter({
+        pages: process.env.SITE_BUILD_DIR ?? 'build',
+        assets: process.env.SITE_BUILD_DIR ?? 'build',
+        precompress: true
+      }),
+      experimental: { remoteFunctions: true },
     })
   ],
   test: {

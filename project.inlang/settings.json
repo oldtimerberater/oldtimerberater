@@ -18,7 +18,8 @@
       "./messages/{locale}/contact.json",
       "./messages/{locale}/imprint.json",
       "./messages/{locale}/privacy.json",
-      "./messages/{locale}/structured-data.json"
+      "./messages/{locale}/structured-data.json",
+      "./messages/{locale}/llms.json"
     ]
   }
 }

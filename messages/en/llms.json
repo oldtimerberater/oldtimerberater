@@ -1,0 +1,14 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "llms_summary": "Independent research, assessment and acquisition advisory for collectors of historically significant motor cars. Based in Berlin, Germany, with work spanning Europe and the United States.",
+  "llms_process": "The advisory process begins with the collector's requirements: period, model, coachwork, specification, provenance, originality, restoration history, condition and intended use. It may involve searching for suitable cars, examining historical records and individual vehicles, coordinating specialist inspections, assessing findings and assisting with acquisition.",
+  "llms_confidentiality": "Enquiries are handled confidentially. The advisor works in English, German and Russian.",
+  "llms_section_advisory": "Advisory",
+  "llms_section_optional": "Optional",
+  "llms_home_description": "Overview of the independent advisory service and its approach to searching for historically significant motor cars.",
+  "llms_method_description": "The collector's mandate, research, historical evidence, vehicle examination, independent judgement and acquisition assistance.",
+  "llms_advisor_description": "Location, geographical scope, languages and approach to discretion.",
+  "llms_contact_description": "Email and telephone contact for confidential enquiries.",
+  "llms_imprint_description": "Service provider and legal information.",
+  "llms_privacy_description": "Personal data processing, communications and data protection rights."
+}
