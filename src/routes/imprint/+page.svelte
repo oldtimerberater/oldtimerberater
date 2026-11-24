@@ -1,4 +1,5 @@
 <script>
+	import { m } from '../../paraglide/messages.js';
 	import legal from '#lib/config/legal.json';
 	import contact from '#lib/config/contact.json';
 	import { entities, jsonLd } from '#lib/seo/structured-data.js';
@@ -7,28 +8,25 @@
 </script>
 
 <svelte:head>
-	<title>Imprint</title>
-	<meta
-		name="description"
-		content="Legal information and contact details for Andrey Paymushin, providing research, assessment and acquisition advisory services for historically significant motor cars."
-	/>
+	<title>{m.imprint_meta_title()}</title>
+	<meta name="description" content={m.imprint_meta_description()} />
 	{@html `<script type="application/ld+json">${structuredData}</script>`}
 </svelte:head>
 
 <main class="imprint-page layout-grid">
-	<h1>Imprint</h1>
+	<h1>{m.imprint_title()}</h1>
 
 	<div class="imprint-content layout-reading">
 		<section aria-labelledby="provider-title">
-			<h2 id="provider-title">Service Provider</h2>
+			<h2 id="provider-title">{m.imprint_provider_title()}</h2>
 
 			<p>{legal.legalName}</p>
-			<p>Legal form: {legal.legalForm}</p>
-			<p>Berlin, Germany</p>
+			<p>{m.imprint_legal_form({ legalForm: legal.legalForm })}</p>
+			<p>{m.imprint_location()}</p>
 		</section>
 
 		<section aria-labelledby="contact-title">
-			<h2 id="contact-title">Contact</h2>
+			<h2 id="contact-title">{m.imprint_contact_title()}</h2>
 
 			<address>
 				<p>
@@ -46,24 +44,21 @@
 		</section>
 
 		<section aria-labelledby="registration-title">
-			<h2 id="registration-title">Business Identification</h2>
+			<h2 id="registration-title">{m.imprint_registration_title()}</h2>
 
-			<p>Tax identification: {legal.taxIdentificationNumber}</p>
+			<p>
+				{m.imprint_tax_identification({
+					taxIdentificationNumber: legal.taxIdentificationNumber
+				})}
+			</p>
 		</section>
 
 		<section aria-labelledby="services-title">
-			<h2 id="services-title">Advisory Services</h2>
+			<h2 id="services-title">{m.imprint_services_title()}</h2>
 
-			<p>
-				I provide research, assessment and acquisition advisory services concerning historically
-				significant motor cars.
-			</p>
+			<p>{m.imprint_services_p1()}</p>
 
-			<p>
-				My remuneration may consist of fees paid by the collector, commissions paid by the seller,
-				or both. Any seller commission or other economic interest connected with an acquisition will
-				be disclosed to the collector.
-			</p>
+			<p>{m.imprint_services_p2()}</p>
 		</section>
 	</div>
 </main>

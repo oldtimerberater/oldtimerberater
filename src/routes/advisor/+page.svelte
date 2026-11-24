@@ -1,13 +1,13 @@
 <script>
+	import { m } from '../../paraglide/messages.js';
 	import { entities, ids, jsonLd, pageEntity } from '#lib/seo/structured-data.js';
 
 	const structuredData = jsonLd([
 		entities.advisor,
 		pageEntity({
 			path: '/advisor/',
-			name: 'The Advisor',
-			description:
-				'Meet Andrey Paymushin, an independent advisor based in Berlin, Germany, working with collectors across Europe and the United States.',
+			name: m.advisor_title(),
+			description: m.advisor_profile_description(),
 			type: 'ProfilePage',
 			mainEntity: ids.advisor
 		})
@@ -15,53 +15,39 @@
 </script>
 
 <svelte:head>
-	<title>Independent Historic Motor Car Advisor — Berlin</title>
-	<meta
-		name="description"
-		content="Berlin-based independent advisor for collectors of historically significant motor cars. Provenance research, vehicle assessment and acquisition support across Europe and the United States."
-	/>
+	<title>{m.advisor_meta_title()}</title>
+	<meta name="description" content={m.advisor_meta_description()} />
 	{@html `<script type="application/ld+json">${structuredData}</script>`}
 </svelte:head>
 
 <main class="advisor-page layout-grid">
-	<h1>The Advisor</h1>
+	<h1>{m.advisor_title()}</h1>
 
 	<section id="advisor" class="advisor-section" aria-labelledby="advisor-title">
 		<h2 id="advisor-title">Andrey Paymushin</h2>
 
 		<div class="advisor-content layout-reading">
-			<p>I am based in Berlin, Germany.</p>
+			<p>{m.advisor_p1()}</p>
 
-			<p>
-				My work brings me into contact with collectors, owners and specialists across Europe and the
-				United States.
-			</p>
+			<p>{m.advisor_p2()}</p>
 
-			<h3>Languages</h3>
+			<h3>{m.advisor_languages_title()}</h3>
 
 			<ul>
-				<li>English</li>
-				<li>German</li>
-				<li>Russian</li>
+				<li>{m.language_en()}</li>
+				<li>{m.language_de()}</li>
+				<li>{m.language_ru()}</li>
 			</ul>
 		</div>
 	</section>
 
 	<section id="discretion" class="advisor-section" aria-labelledby="discretion-title">
-		<h2 id="discretion-title">Discretion</h2>
+		<h2 id="discretion-title">{m.advisor_discretion_title()}</h2>
 
 		<div class="advisor-content layout-reading">
-			<p>
-				I treat your enquiries, the details of your search, negotiations and acquisitions as
-				confidential. The same discretion applies to an initial enquiry, before any formal
-				engagement has begun.
-			</p>
+			<p>{m.advisor_discretion_p1()}</p>
 
-			<p>
-				Before approaching an owner, seller or specialist, we agree what information about you and
-				the motor car you are seeking may be disclosed. I share that information only with your
-				express approval.
-			</p>
+			<p>{m.advisor_discretion_p2()}</p>
 		</div>
 	</section>
 </main>
