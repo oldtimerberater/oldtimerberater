@@ -21,6 +21,12 @@ importers:
       '@inlang/paraglide-js':
         specifier: ^3.2.2
         version: 3.2.2(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)(vite@8.3.7(@types/node@26.6.6)(jiti@2.7.0)(terser@5.51.4))
+      '@inlang/paraglide-js-svelte':
+        specifier: ^1.0.5
+        version: 1.0.5(@inlang/paraglide-js@3.2.2(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)(vite@8.3.7(@types/node@26.6.6)(jiti@2.7.0)(terser@5.51.4)))(svelte@5.57.3)
+      '@inlang/plugin-m-function-matcher':
+        specifier: ^2.4.3
+        version: 2.4.3
       '@inlang/plugin-message-format':
         specifier: ^4.6.0
         version: 4.6.0
@@ -86,6 +92,23 @@ importers:
         version: 2.2.1(svelte@5.57.3)(vitest@4.1.12)
 
 packages:
+
+  '@babel/helper-string-parser@7.29.15':
+    resolution: {integrity: sha512-C2FuapQ2Kh1OnVHAoLi5rD3GBJ8COb9Q609T6HEpLqaBAo560PDP5OxBE5dCI/h951MBO/+bCUYU5SZ+8ZlV+w==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/helper-validator-identifier@7.29.7':
+    resolution: {integrity: sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/parser@7.29.15':
+    resolution: {integrity: sha512-RpKWyisHoP81twtSCgmE02iU0RnPcq1DN5bBEbpUePrjA9Q3wXhufnCJrrayPpoZieqFh3zyZQqwtSK0gGccRA==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
+  '@babel/types@7.29.15':
+    resolution: {integrity: sha512-/XKpKDakL//LZ66bq1XsZOswuqeI5MZqPLDu18o3XdkU1fNJ7bdPtzgnc4ZNS+bBGHV0FJG8jjb8SwcC3nNVQQ==}
+    engines: {node: '>=6.9.0'}
 
   '@blazediff/core@1.9.1':
     resolution: {integrity: sha512-ehg3jIkYKulZh+8om/O25vkvSsXXwC+skXmyA87FFx6A/45eqOkZsBltMw/TVteb0mloiGT8oGRTcjRAz66zaA==}
@@ -240,6 +263,12 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
+  '@inlang/paraglide-js-svelte@1.0.5':
+    resolution: {integrity: sha512-QBIlMX/I/IzsWJLx5O0Xt/aBhQs0cnifozswLxBt1IYGANUyfT7Seiu29jZ1OOHHyfrfa1g4AviO3nXsbrKsYw==}
+    peerDependencies:
+      '@inlang/paraglide-js': '>=2.11.0 <4'
+      svelte: ^5.0.0
+
   '@inlang/paraglide-js@3.2.2':
     resolution: {integrity: sha512-YoQ2aHmzSgC+yfUgKwcJew3F0lFfwLJsriGCbwQHiJfjKGNjhQnbRr0OXoxsy2ulY2/gK8vYpiphuTv2J0wf5Q==}
     hasBin: true
@@ -251,6 +280,9 @@ packages:
         optional: true
       vite:
         optional: true
+
+  '@inlang/plugin-m-function-matcher@2.4.3':
+    resolution: {integrity: sha512-0jlW4nZ1RDCFqLRZ1FO/dwvV7uhyuHLEzr7vudmCHqt3Qil5/mfCO5i5cvvls120lpoybmdbpwWy/Dvu5SMMGQ==}
 
   '@inlang/plugin-message-format@4.6.0':
     resolution: {integrity: sha512-DK2GZvypDygLchnUaFK/RdCIm2baiRlQftOiesGNKDtjNqioqWHnnu0zg6NKNlo3kD42h5xlRCke7zEjBFzZrg==}
@@ -1507,6 +1539,19 @@ packages:
 
 snapshots:
 
+  '@babel/helper-string-parser@7.29.15': {}
+
+  '@babel/helper-validator-identifier@7.29.7': {}
+
+  '@babel/parser@7.29.15':
+    dependencies:
+      '@babel/types': 7.29.15
+
+  '@babel/types@7.29.15':
+    dependencies:
+      '@babel/helper-string-parser': 7.29.15
+      '@babel/helper-validator-identifier': 7.29.7
+
   '@blazediff/core@1.9.1': {}
 
   '@bytecodealliance/jco-node-fs-darwin-arm64@0.3.2':
@@ -1649,6 +1694,11 @@ snapshots:
       '@inlang/sdk': 4.2.0
       esbuild-wasm: 0.19.12
 
+  '@inlang/paraglide-js-svelte@1.0.5(@inlang/paraglide-js@3.2.2(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)(vite@8.3.7(@types/node@26.6.6)(jiti@2.7.0)(terser@5.51.4)))(svelte@5.57.3)':
+    dependencies:
+      '@inlang/paraglide-js': 3.2.2(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)(vite@8.3.7(@types/node@26.6.6)(jiti@2.7.0)(terser@5.51.4))
+      svelte: 5.57.3
+
   '@inlang/paraglide-js@3.2.2(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)(vite@8.3.7(@types/node@26.6.6)(jiti@2.7.0)(terser@5.51.4))':
     dependencies:
       '@inlang/recommend-sherlock': 0.2.1
@@ -1666,6 +1716,14 @@ snapshots:
       vite: 8.3.7(@types/node@26.6.6)(jiti@2.7.0)(terser@5.51.4)
     transitivePeerDependencies:
       - typescript
+
+  '@inlang/plugin-m-function-matcher@2.4.3':
+    dependencies:
+      '@babel/parser': 7.29.15
+      '@inlang/sdk': 4.2.0
+      svelte: 5.57.3
+    transitivePeerDependencies:
+      - '@typescript-eslint/types'
 
   '@inlang/plugin-message-format@4.6.0':
     dependencies:

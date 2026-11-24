@@ -1,4 +1,6 @@
 <script>
+	import { m } from '../paraglide/messages.js';
+	import { ParaglideMessage } from '@inlang/paraglide-js-svelte';
 	import { entities, jsonLd } from '#lib/seo/structured-data.js';
 
 	const structuredData = jsonLd([
@@ -12,65 +14,53 @@
 </script>
 
 <svelte:head>
-	<title>Independent Historic Motor Car Acquisition Advisory</title>
-	<meta
-		name="description"
-		content="Independent advisory for collectors of historically significant motor cars. Research, provenance evaluation and acquisition advice across Europe and the United States."
-	/>
+	<title>{m.home_meta_title()}</title>
+
+	<meta name="description" content={m.home_meta_description()} />
+
 	{@html `<script type="application/ld+json">${structuredData}</script>`}
 </svelte:head>
 
 <main class="home-page layout-grid">
 	<div class="home-introduction">
 		<div class="home-statement">
-			<h1>Independent Advisory</h1>
+			<h1>{m.home_title()}</h1>
 
-			<p>for Collectors of Historically Significant Motor Cars</p>
+			<p>{m.home_subtitle()}</p>
 		</div>
 	</div>
 
 	<div class="home-sections">
 		<section id="advisory" aria-labelledby="advisory-title">
-			<h2 id="advisory-title">The Advisory</h2>
+			<h2 id="advisory-title">{m.home_advisory_title()}</h2>
 
-			<p>Every search begins with understanding the particular motor car you have in mind.</p>
+			<p>{m.home_advisory_p1()}</p>
 
-			<p>
-				I want to know what draws you to it: the model, the period, the coachwork or perhaps the
-				history of an individual example. We discuss the provenance, originality, condition and
-				restoration history you expect, together with how you intend to use the car.
-			</p>
+			<p>{m.home_advisory_p2()}</p>
+
+			<p>{m.home_advisory_p3()}</p>
 
 			<p>
-				Your requirements guide my enquiries among owners, collectors and specialists across Europe
-				and the United States. When a promising candidate emerges, I examine its history,
-				documentation and individual characteristics to establish whether it deserves closer
-				consideration.
-			</p>
-
-			<p>
-				You can read more about my
-				<a class="is-interactive" href="/method/">approach to research and assessment</a>.
+				<ParaglideMessage message={m.home_advisory_p4} inputs={{}}>
+					{#snippet link({ children })}
+						<a class="is-interactive" href="/method/">
+							{@render children?.()}
+						</a>
+					{/snippet}
+				</ParaglideMessage>
 			</p>
 		</section>
 
 		<section id="historical-significance" aria-labelledby="historical-significance-title">
-			<h2 id="historical-significance-title">Historical Significance</h2>
+			<h2 id="historical-significance-title">
+				{m.home_historical_significance_title()}
+			</h2>
 
-			<p>
-				The historical significance of a motor car arises from its individual history and
-				characteristics.
-			</p>
+			<p>{m.home_historical_significance_p1()}</p>
 
-			<p>
-				Provenance, rarity, coachwork, originality, preservation and associations with particular
-				people or events may all contribute to its importance.
-			</p>
+			<p>{m.home_historical_significance_p2()}</p>
 
-			<p>
-				Two examples of the same model can differ substantially in historical significance. Their
-				individual histories and surviving characteristics deserve careful examination.
-			</p>
+			<p>{m.home_historical_significance_p3()}</p>
 		</section>
 	</div>
 </main>
