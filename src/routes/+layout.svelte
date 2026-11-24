@@ -2,6 +2,7 @@
 	import '../app.css';
 	import robotoFlexUrl from '@fontsource-variable/roboto-flex/files/roboto-flex-latin-full-normal.woff2?url';
 	import { page } from '$app/state';
+	import { m } from '../paraglide/messages.js';
 
 	/** @type {{children: import('svelte').Snippet}} */
 	let { children } = $props();
@@ -14,34 +15,43 @@
 
 <div class="site-shell">
 	<header class="site-header">
-		<nav class="primary-navigation layout-container" aria-label="Primary navigation">
-			<a class="is-interactive" href="/" aria-current={page.route.id === '/' ? 'page' : undefined}
-				>Home</a
-			>
+		<nav class="primary-navigation layout-container" aria-label={m.navigation_primary_label()}>
+			<a class="is-interactive" href="/" aria-current={page.route.id === '/' ? 'page' : undefined}>
+				{m.navigation_home()}
+			</a>
+
 			<a
 				class="is-interactive"
 				href="/method/"
-				aria-current={page.route.id === '/method' ? 'page' : undefined}>Method</a
+				aria-current={page.route.id === '/method' ? 'page' : undefined}
 			>
+				{m.navigation_method()}
+			</a>
+
 			<a
 				class="is-interactive"
 				href="/advisor/"
-				aria-current={page.route.id === '/advisor' ? 'page' : undefined}>Advisor</a
+				aria-current={page.route.id === '/advisor' ? 'page' : undefined}
 			>
+				{m.navigation_advisor()}
+			</a>
+
 			<a
 				class="is-interactive"
 				href="/contact/"
-				aria-current={page.route.id === '/contact' ? 'page' : undefined}>Contact</a
+				aria-current={page.route.id === '/contact' ? 'page' : undefined}
 			>
+				{m.navigation_contact()}
+			</a>
 		</nav>
 	</header>
 
 	{@render children()}
 
 	<footer class="site-footer">
-		<nav class="legal-navigation layout-container" aria-label="Legal information">
-			<a class="is-interactive" href="/imprint/">Imprint</a>
-			<a class="is-interactive" href="/privacy/">Privacy Policy</a>
+		<nav class="legal-navigation layout-container" aria-label={m.navigation_legal_label()}>
+			<a class="is-interactive" href="/imprint/">{m.navigation_imprint()}</a>
+			<a class="is-interactive" href="/privacy/">{m.navigation_privacy()}</a>
 		</nav>
 	</footer>
 </div>

@@ -1,4 +1,5 @@
 <script>
+	import { m } from '../../paraglide/messages.js';
 	import contact from '#lib/config/contact.json';
 	import { entities, jsonLd } from '#lib/seo/structured-data.js';
 
@@ -6,16 +7,13 @@
 </script>
 
 <svelte:head>
-	<title>Private Enquiries — Historic Motor Car Advisory</title>
-	<meta
-		name="description"
-		content="Private enquiries concerning historically significant motor cars, including research, assessment and acquisition advice. Contact by email or telephone."
-	/>
+	<title>{m.contact_meta_title()}</title>
+	<meta name="description" content={m.contact_meta_description()} />
 	{@html `<script type="application/ld+json">${structuredData}</script>`}
 </svelte:head>
 
 <main class="contact-page layout-grid">
-	<h1>Private Enquiries</h1>
+	<h1>{m.contact_title()}</h1>
 
 	<div class="contact-content layout-reading">
 		<address>
@@ -32,7 +30,7 @@
 			</p>
 		</address>
 
-		<p>I will treat your enquiry and any information you share with me in confidence.</p>
+		<p>{m.contact_confidentiality()}</p>
 	</div>
 </main>
 

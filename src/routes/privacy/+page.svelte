@@ -1,187 +1,150 @@
 <script>
+	import { m } from '../../paraglide/messages.js';
+	import { ParaglideMessage } from '@inlang/paraglide-js-svelte';
 	import legal from '#lib/config/legal.json';
 	import contact from '#lib/config/contact.json';
 </script>
 
 <svelte:head>
-	<title>Privacy Policy</title>
-	<meta
-		name="description"
-		content="Information about personal data processing, website access, correspondence and your rights under the GDPR."
-	/>
+	<title>{m.privacy_meta_title()}</title>
+	<meta name="description" content={m.privacy_meta_description()} />
 </svelte:head>
 
 <main class="privacy-page layout-grid">
-	<h1>Privacy Policy</h1>
+	<h1>{m.privacy_title()}</h1>
 
 	<div class="privacy-content layout-reading">
 		<section aria-labelledby="controller-title">
-			<h2 id="controller-title">Data Controller</h2>
+			<h2 id="controller-title">{m.privacy_controller_title()}</h2>
 
 			<p>{legal.legalName}</p>
-			<p>Berlin, Germany</p>
+			<p>{m.privacy_controller_location()}</p>
 
 			<p>
-				For enquiries concerning your personal data, please contact me at
-				<a class="is-interactive" href={`mailto:${contact.email}`}>
-					{contact.email}
-				</a>.
+				<ParaglideMessage message={m.privacy_controller_p1} inputs={{ email: contact.email }}>
+					{#snippet link({ children })}
+						<a class="is-interactive" href={`mailto:${contact.email}`}>
+							{@render children?.()}
+						</a>
+					{/snippet}
+				</ParaglideMessage>
 			</p>
 		</section>
 
 		<section id="access" aria-labelledby="access-title">
-			<h2 id="access-title">Website Access</h2>
+			<h2 id="access-title">{m.privacy_access_title()}</h2>
 
-			<p>
-				When you visit this website, your browser establishes a connection with the web server.
-				Technical information, including your IP address and the requested resource, is processed to
-				deliver the website to your device.
-			</p>
+			<p>{m.privacy_access_p1()}</p>
 
-			<p>
-				This information is processed temporarily during the connection. The website does not
-				maintain access logs or retain records of individual visits.
-			</p>
+			<p>{m.privacy_access_p2()}</p>
 
-			<p>
-				The legal basis is Article 6(1)(f) GDPR. My legitimate interest is the reliable delivery and
-				operation of the website.
-			</p>
+			<p>{m.privacy_access_p3()}</p>
 		</section>
 
 		<section aria-labelledby="technologies-title">
-			<h2 id="technologies-title">Cookies and Tracking</h2>
+			<h2 id="technologies-title">{m.privacy_technologies_title()}</h2>
 
-			<p>
-				This website does not use cookies, analytics services, visitor tracking or advertising
-				technologies.
-			</p>
+			<p>{m.privacy_technologies_p1()}</p>
 		</section>
 
 		<section aria-labelledby="communication-title">
-			<h2 id="communication-title">Email and Telephone Communication</h2>
+			<h2 id="communication-title">{m.privacy_communication_title()}</h2>
 
-			<p>
-				When you contact me by email or telephone, I process the contact details and information you
-				provide to respond to your enquiry and, where applicable, discuss or carry out an advisory
-				engagement.
-			</p>
+			<p>{m.privacy_communication_p1()}</p>
 
-			<p>
-				Where communication concerns a requested service or an existing contractual relationship,
-				processing is based on Article 6(1)(b) GDPR. Other enquiries are processed under Article
-				6(1)(f) GDPR, based on my legitimate interest in responding to correspondence.
-			</p>
+			<p>{m.privacy_communication_p2()}</p>
 
-			<p>
-				You are under no obligation to contact me. If you do, I need sufficient contact information
-				to respond to your enquiry.
-			</p>
+			<p>{m.privacy_communication_p3()}</p>
 		</section>
 
 		<section aria-labelledby="services-title">
-			<h2 id="services-title">Email Service Provider</h2>
+			<h2 id="services-title">{m.privacy_services_title()}</h2>
+
+			<p>{m.privacy_services_p1()}</p>
 
 			<p>
-				I use Gmail, a service provided by Google, to receive, send and store email correspondence.
-			</p>
-
-			<p>
-				Correspondence processed through Gmail may be handled on Google's infrastructure outside the
-				European Economic Area. Google describes its data processing and international transfer
-				safeguards in its
-				<a
-					class="is-interactive"
-					href="https://policies.google.com/privacy"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Privacy Policy
-				</a>.
+				<ParaglideMessage message={m.privacy_services_p2} inputs={{}}>
+					{#snippet link({ children })}
+						<a
+							class="is-interactive"
+							href="https://policies.google.com/privacy"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							{@render children?.()}
+						</a>
+					{/snippet}
+				</ParaglideMessage>
 			</p>
 		</section>
 
 		<section aria-labelledby="disclosure-title">
-			<h2 id="disclosure-title">Information Shared During an Engagement</h2>
+			<h2 id="disclosure-title">{m.privacy_disclosure_title()}</h2>
 
-			<p>
-				An advisory engagement may require communication with motor-car owners, sellers, dealers,
-				archives or independent specialists.
-			</p>
+			<p>{m.privacy_disclosure_p1()}</p>
 
-			<p>
-				We will discuss what information about you and your requirements needs to be shared with
-				these parties before making enquiries on your behalf. Depending on the engagement,
-				recipients may be located in Europe or the United States.
-			</p>
+			<p>{m.privacy_disclosure_p2()}</p>
 		</section>
 
 		<section aria-labelledby="retention-title">
-			<h2 id="retention-title">Data Retention</h2>
+			<h2 id="retention-title">{m.privacy_retention_title()}</h2>
 
-			<p>
-				I retain correspondence and related information for as long as necessary to handle your
-				enquiry or carry out an advisory engagement.
-			</p>
+			<p>{m.privacy_retention_p1()}</p>
 
-			<p>
-				Where statutory retention obligations apply, the relevant information is retained for the
-				required period. Information may also need to be retained where necessary to establish,
-				exercise or defend legal claims.
-			</p>
+			<p>{m.privacy_retention_p2()}</p>
 
-			<p>
-				Otherwise, personal data is deleted when it is no longer required for the purpose for which
-				it was collected.
-			</p>
+			<p>{m.privacy_retention_p3()}</p>
 		</section>
 
 		<section aria-labelledby="rights-title">
-			<h2 id="rights-title">Your Data Protection Rights</h2>
+			<h2 id="rights-title">{m.privacy_rights_title()}</h2>
 
-			<p>Under the GDPR, you may have the right to request:</p>
+			<p>{m.privacy_rights_p1()}</p>
 
 			<ul>
-				<li>access to your personal data;</li>
-				<li>correction of inaccurate personal data;</li>
-				<li>deletion of your personal data;</li>
-				<li>restriction of processing;</li>
-				<li>data portability, where applicable;</li>
-				<li>objection to processing based on legitimate interests.</li>
+				<li>{m.privacy_rights_access()}</li>
+				<li>{m.privacy_rights_correction()}</li>
+				<li>{m.privacy_rights_deletion()}</li>
+				<li>{m.privacy_rights_restriction()}</li>
+				<li>{m.privacy_rights_portability()}</li>
+				<li>{m.privacy_rights_objection()}</li>
 			</ul>
 
 			<p>
-				You can exercise these rights by contacting me at
-				<a class="is-interactive" href={`mailto:${contact.email}`}>
-					{contact.email}
-				</a>.
+				<ParaglideMessage message={m.privacy_rights_p2} inputs={{ email: contact.email }}>
+					{#snippet link({ children })}
+						<a class="is-interactive" href={`mailto:${contact.email}`}>
+							{@render children?.()}
+						</a>
+					{/snippet}
+				</ParaglideMessage>
 			</p>
 		</section>
 
 		<section aria-labelledby="decisions-title">
-			<h2 id="decisions-title">Automated Decision-Making</h2>
+			<h2 id="decisions-title">{m.privacy_decisions_title()}</h2>
 
-			<p>
-				No automated decision-making or profiling within the meaning of Article 22 GDPR is carried
-				out in connection with website visits or enquiries.
-			</p>
+			<p>{m.privacy_decisions_p1()}</p>
 		</section>
 
 		<section aria-labelledby="complaints-title">
-			<h2 id="complaints-title">Supervisory Authority</h2>
+			<h2 id="complaints-title">{m.privacy_complaints_title()}</h2>
 
-			<p>You have the right to lodge a complaint with a data protection supervisory authority.</p>
+			<p>{m.privacy_complaints_p1()}</p>
 
 			<p>
-				The supervisory authority responsible for Berlin is the
-				<a
-					class="is-interactive"
-					href="https://www.datenschutz-berlin.de/"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Berliner Beauftragte für Datenschutz und Informationsfreiheit
-				</a>.
+				<ParaglideMessage message={m.privacy_complaints_p2} inputs={{}}>
+					{#snippet link({ children })}
+						<a
+							class="is-interactive"
+							href="https://www.datenschutz-berlin.de/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							{@render children?.()}
+						</a>
+					{/snippet}
+				</ParaglideMessage>
 			</p>
 		</section>
 	</div>
