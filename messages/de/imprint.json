@@ -1,0 +1,11 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "imprint_meta_description": "Rechtliche Informationen und Kontaktdaten von Andrey Paymushin, Anbieter von Recherche, Fahrzeugbeurteilung und Kaufberatung für historisch bedeutende Automobile.",
+  "imprint_provider_title": "Diensteanbieter",
+  "imprint_legal_form": "Rechtsform: {legalForm}",
+  "imprint_registration_title": "Unternehmensidentifikation",
+  "imprint_tax_identification": "Steuerliche Identifikation: {taxIdentificationNumber}",
+  "imprint_services_title": "Beratungsleistungen",
+  "imprint_services_p1": "Ich biete Recherche, Fahrzeugbeurteilung und Beratung beim Erwerb historisch bedeutender Automobile an.",
+  "imprint_services_p2": "Meine Vergütung kann aus Honoraren des Sammlers, Provisionen des Verkäufers oder einer Kombination aus beidem bestehen. Etwaige Verkäuferprovisionen oder sonstige wirtschaftliche Interessen im Zusammenhang mit einem Erwerb werden dem Sammler offengelegt."
+}

@@ -42,7 +42,7 @@ export const entities = {
   website: {
     '@type': 'WebSite',
     '@id': ids.website,
-    name: m.schema_website_name(),
+    name: m.common_advisory(),
     alternateName: 'oldtimerberater.eu',
     url: siteUrl,
     inLanguage: 'en',

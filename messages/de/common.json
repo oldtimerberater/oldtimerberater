@@ -1,0 +1,17 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "language_en": "Englisch",
+  "language_de": "Deutsch",
+  "language_ru": "Russisch",
+  "navigation_primary_label": "Hauptnavigation",
+  "navigation_home": "Startseite",
+  "navigation_advisor": "Berater",
+  "navigation_legal_label": "Rechtliche Informationen",
+  "common_imprint": "Impressum",
+  "common_privacy": "Datenschutzerklärung",
+  "common_contact": "Kontakt",
+  "common_method": "Vorgehensweise",
+  "common_advisory": "Unabhängige Beratung",
+  "common_location": "Berlin, Deutschland",
+  "navigation_language_label": "Sprachauswahl"
+}
