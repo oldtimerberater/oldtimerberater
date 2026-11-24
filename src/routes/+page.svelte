@@ -33,22 +33,19 @@
 		<section id="advisory" aria-labelledby="advisory-title">
 			<h2 id="advisory-title">The Advisory</h2>
 
+			<p>Every search begins with understanding the particular motor car you have in mind.</p>
+
 			<p>
-				The search begins with the motor car you are looking for, not with one that happens to be
-				available for sale.
+				I want to know what draws you to it: the model, the period, the coachwork or perhaps the
+				history of an individual example. We discuss the provenance, originality, condition and
+				restoration history you expect, together with how you intend to use the car.
 			</p>
 
 			<p>
-				I do not maintain an inventory or promote a selection of available cars. Before beginning a
-				search, I want to understand what matters to you: the particular model, coachwork and
-				specification, its provenance and originality, its condition and how you intend to use it.
-			</p>
-
-			<p>
-				I search across Europe and the United States. The purpose is not to find as many candidates
-				as possible, but to identify those worth examining more closely. Finding a promising car is
-				only the beginning. Its history, its condition and the evidence supporting its identity must
-				then be considered.
+				Your requirements guide my enquiries among owners, collectors and specialists across Europe
+				and the United States. When a promising candidate emerges, I examine its history,
+				documentation and individual characteristics to establish whether it deserves closer
+				consideration.
 			</p>
 
 			<p>
@@ -60,16 +57,19 @@
 		<section id="historical-significance" aria-labelledby="historical-significance-title">
 			<h2 id="historical-significance-title">Historical Significance</h2>
 
-			<p>Age alone does not make a motor car historically significant.</p>
-
 			<p>
-				Its importance may lie in its provenance, rarity, coachwork, originality, state of
-				preservation or association with a particular person or event.
+				The historical significance of a motor car arises from its individual history and
+				characteristics.
 			</p>
 
 			<p>
-				Two motor cars of the same model may have very different histories. Understanding those
-				differences is essential to recognising what makes an individual example worth collecting.
+				Provenance, rarity, coachwork, originality, preservation and associations with particular
+				people or events may all contribute to its importance.
+			</p>
+
+			<p>
+				Two examples of the same model can differ substantially in historical significance. Their
+				individual histories and surviving characteristics deserve careful examination.
 			</p>
 		</section>
 	</div>
