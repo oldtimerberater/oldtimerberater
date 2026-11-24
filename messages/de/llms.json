@@ -1,0 +1,14 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "llms_summary": "Unabhängige Recherche, Fahrzeugbeurteilung und Kaufberatung für Sammler historisch bedeutender Automobile. Mit Sitz in Berlin und einem Tätigkeitsbereich, der Europa und die Vereinigten Staaten umfasst.",
+  "llms_process": "Die Beratung beginnt mit den Anforderungen des Sammlers: Epoche, Modell, Karosserie, Ausführung, Provenienz, Originalität, Restaurierungsgeschichte, Zustand und beabsichtigte Nutzung. Sie kann die Suche nach geeigneten Automobilen, die Untersuchung historischer Unterlagen und einzelner Fahrzeuge, die Koordination fachkundiger Untersuchungen, die Beurteilung der Ergebnisse und die Unterstützung beim Erwerb umfassen.",
+  "llms_confidentiality": "Anfragen werden vertraulich behandelt. Die Beratung erfolgt auf Deutsch, Englisch und Russisch.",
+  "llms_section_advisory": "Beratung",
+  "llms_section_optional": "Weitere Informationen",
+  "llms_home_description": "Überblick über die unabhängige Beratung und die Vorgehensweise bei der Suche nach historisch bedeutenden Automobilen.",
+  "llms_method_description": "Sammlerauftrag, Recherche, historische Nachweise, Fahrzeuguntersuchung, unabhängige Beurteilung und Kaufbegleitung.",
+  "llms_advisor_description": "Standort, geografischer Tätigkeitsbereich, Sprachen und Umgang mit vertraulichen Informationen.",
+  "llms_contact_description": "Kontakt per E-Mail und Telefon für vertrauliche Anfragen.",
+  "llms_imprint_description": "Diensteanbieter und rechtliche Informationen.",
+  "llms_privacy_description": "Verarbeitung personenbezogener Daten, Kommunikation und Datenschutzrechte."
+}
