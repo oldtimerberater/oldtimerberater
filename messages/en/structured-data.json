@@ -1,0 +1,17 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"schema_business_description": "Independent research, assessment and acquisition advisory for collectors of historically significant motor cars.",
+	"schema_advisor_job_title": "Independent Motor Car Advisor",
+	"schema_advisor_description": "Independent advisor for collectors of historically significant motor cars.",
+	"schema_contact_type": "Private enquiries",
+	"schema_service_name": "Independent Advisory for Collectors of Historically Significant Motor Cars",
+	"schema_service_type": "Historic motor car advisory",
+	"schema_service_audience": "Collectors of historically significant motor cars",
+	"schema_service_area": "Worldwide",
+	"schema_offer_name": "Individual Advisory Engagement",
+	"schema_catalog_name": "Collector Advisory Services",
+	"schema_catalog_search": "Search and Sourcing of Historically Significant Motor Cars",
+	"schema_catalog_provenance": "Provenance and Historical Research",
+	"schema_catalog_assessment": "Vehicle Assessment and Coordination of Specialist Inspections",
+	"schema_catalog_acquisition": "Acquisition Assistance and Negotiations"
+}

@@ -25,7 +25,7 @@
 				href="/method/"
 				aria-current={page.route.id === '/method' ? 'page' : undefined}
 			>
-				{m.navigation_method()}
+				{m.common_method()}
 			</a>
 
 			<a
@@ -41,7 +41,7 @@
 				href="/contact/"
 				aria-current={page.route.id === '/contact' ? 'page' : undefined}
 			>
-				{m.navigation_contact()}
+				{m.common_contact()}
 			</a>
 		</nav>
 	</header>
@@ -50,8 +50,8 @@
 
 	<footer class="site-footer">
 		<nav class="legal-navigation layout-container" aria-label={m.navigation_legal_label()}>
-			<a class="is-interactive" href="/imprint/">{m.navigation_imprint()}</a>
-			<a class="is-interactive" href="/privacy/">{m.navigation_privacy()}</a>
+			<a class="is-interactive" href="/imprint/">{m.common_imprint()}</a>
+			<a class="is-interactive" href="/privacy/">{m.common_privacy()}</a>
 		</nav>
 	</footer>
 </div>

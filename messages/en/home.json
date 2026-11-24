@@ -1,0 +1,15 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"home_meta_title": "Independent Historic Motor Car Acquisition Advisory",
+	"home_meta_description": "Independent advisory for collectors of historically significant motor cars. Research, provenance evaluation and acquisition advice across Europe and the United States.",
+	"home_subtitle": "for Collectors of Historically Significant Motor Cars",
+	"home_advisory_title": "The Advisory",
+	"home_advisory_p1": "Every search begins with understanding the particular motor car you have in mind.",
+	"home_advisory_p2": "I want to know what draws you to it: the model, the period, the coachwork or perhaps the history of an individual example. We discuss the provenance, originality, condition and restoration history you expect, together with how you intend to use the car.",
+	"home_advisory_p3": "Your requirements guide my enquiries among owners, collectors and specialists across Europe and the United States. When a promising candidate emerges, I examine its history, documentation and individual characteristics to establish whether it deserves closer consideration.",
+	"home_advisory_p4": "You can read more about my {#link}approach to research and assessment{/link}.",
+	"home_historical_significance_title": "Historical Significance",
+	"home_historical_significance_p1": "The historical significance of a motor car arises from its individual history and characteristics.",
+	"home_historical_significance_p2": "Provenance, rarity, coachwork, originality, preservation and associations with particular people or events may all contribute to its importance.",
+	"home_historical_significance_p3": "Two examples of the same model can differ substantially in historical significance. Their individual histories and surviving characteristics deserve careful examination."
+}

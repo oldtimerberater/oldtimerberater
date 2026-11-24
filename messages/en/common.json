@@ -1,0 +1,16 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "language_en": "English",
+  "language_de": "German",
+  "language_ru": "Russian",
+  "navigation_primary_label": "Primary navigation",
+  "navigation_home": "Home",
+  "navigation_advisor": "Advisor",
+  "navigation_legal_label": "Legal information",
+  "common_imprint": "Imprint",
+	"common_privacy": "Privacy Policy",
+	"common_contact": "Contact",
+	"common_method": "Method",
+	"common_advisory": "Independent Advisory",
+	"common_location": "Berlin, Germany"
+}

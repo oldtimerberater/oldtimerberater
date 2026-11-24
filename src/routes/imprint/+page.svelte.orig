@@ -1,0 +1,109 @@
+<script>
+	import { m } from '../../paraglide/messages.js';
+	import legal from '#lib/config/legal.json';
+	import contact from '#lib/config/contact.json';
+	import { entities, jsonLd } from '#lib/seo/structured-data.js';
+
+	const structuredData = jsonLd([entities.business, entities.advisor, entities.contact]);
+</script>
+
+<svelte:head>
+	<title>{m.common_imprint()}</title>
+	<meta name="description" content={m.imprint_meta_description()} />
+	{@html `<script type="application/ld+json">${structuredData}</script>`}
+</svelte:head>
+
+<main class="imprint-page layout-grid">
+	<h1>{m.common_imprint()}</h1>
+
+	<div class="imprint-content layout-reading">
+		<section aria-labelledby="provider-title">
+			<h2 id="provider-title">{m.imprint_provider_title()}</h2>
+
+			<p>{legal.legalName}</p>
+			<p>{m.imprint_legal_form({ legalForm: legal.legalForm })}</p>
+			<p>{m.common_location()}</p>
+		</section>
+
+		<section aria-labelledby="contact-title">
+			<h2 id="contact-title">{m.imprint_contact_title()}</h2>
+
+			<address>
+				<p>
+					<a class="is-interactive" href={`mailto:${contact.email}`}>
+						{contact.email}
+					</a>
+				</p>
+
+				<p>
+					<a class="is-interactive" href={`tel:${contact.phone.replaceAll(' ', '')}`}>
+						{contact.phone}
+					</a>
+				</p>
+			</address>
+		</section>
+
+		<section aria-labelledby="registration-title">
+			<h2 id="registration-title">{m.imprint_registration_title()}</h2>
+
+			<p>
+				{m.imprint_tax_identification({
+					taxIdentificationNumber: legal.taxIdentificationNumber
+				})}
+			</p>
+		</section>
+
+		<section aria-labelledby="services-title">
+			<h2 id="services-title">{m.imprint_services_title()}</h2>
+
+			<p>{m.imprint_services_p1()}</p>
+
+			<p>{m.imprint_services_p2()}</p>
+		</section>
+	</div>
+</main>
+
+<style>
+	.imprint-page {
+		padding-block: clamp(3rem, 6vw, 5rem) var(--layout-section-gap);
+		row-gap: clamp(3rem, 6vw, 5rem);
+	}
+
+	.imprint-page > h1 {
+		grid-column: 2 / -1;
+		margin: 0;
+	}
+
+	.imprint-content {
+		grid-column: 2 / span 8;
+		min-width: 0;
+
+		display: grid;
+		row-gap: clamp(2.5rem, 5vw, 4rem);
+	}
+
+	.imprint-content section > h2 {
+		margin-block-start: 0;
+	}
+
+	.imprint-content section > :last-child {
+		margin-block-end: 0;
+	}
+
+	.imprint-content address {
+		font-style: normal;
+	}
+
+	@media (max-width: 64rem) {
+		.imprint-page > h1,
+		.imprint-content {
+			grid-column: 1 / -1;
+		}
+	}
+
+	@media (max-width: 48rem) {
+		.imprint-page {
+			row-gap: 2.5rem;
+		}
+	}
+</style>

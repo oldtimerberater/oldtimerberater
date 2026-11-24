@@ -24,7 +24,7 @@
 <main class="home-page layout-grid">
 	<div class="home-introduction">
 		<div class="home-statement">
-			<h1>{m.home_title()}</h1>
+			<h1>{m.common_advisory()}</h1>
 
 			<p>{m.home_subtitle()}</p>
 		</div>

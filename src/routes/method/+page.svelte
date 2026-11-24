@@ -14,7 +14,7 @@
 </svelte:head>
 
 <main class="method-page layout-grid">
-	<h1>{m.method_title()}</h1>
+	<h1>{m.common_method()}</h1>
 
 	<nav class="method-index" aria-label={m.method_navigation_label()}>
 		<ul>

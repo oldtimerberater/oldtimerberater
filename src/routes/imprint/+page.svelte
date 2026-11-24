@@ -8,13 +8,13 @@
 </script>
 
 <svelte:head>
-	<title>{m.imprint_meta_title()}</title>
+	<title>{m.common_imprint()}</title>
 	<meta name="description" content={m.imprint_meta_description()} />
 	{@html `<script type="application/ld+json">${structuredData}</script>`}
 </svelte:head>
 
 <main class="imprint-page layout-grid">
-	<h1>{m.imprint_title()}</h1>
+	<h1>{m.common_imprint()}</h1>
 
 	<div class="imprint-content layout-reading">
 		<section aria-labelledby="provider-title">
@@ -22,11 +22,11 @@
 
 			<p>{legal.legalName}</p>
 			<p>{m.imprint_legal_form({ legalForm: legal.legalForm })}</p>
-			<p>{m.imprint_location()}</p>
+			<p>{m.common_location()}</p>
 		</section>
 
 		<section aria-labelledby="contact-title">
-			<h2 id="contact-title">{m.imprint_contact_title()}</h2>
+			<h2 id="contact-title">{m.common_contact()}</h2>
 
 			<address>
 				<p>
