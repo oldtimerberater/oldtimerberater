@@ -3,6 +3,7 @@
 	import robotoFlexUrl from '@fontsource-variable/roboto-flex/files/roboto-flex-latin-full-normal.woff2?url';
 	import { page } from '$app/state';
 	import { m } from '../paraglide/messages.js';
+	import { siteUrl, siteUrls } from '#lib/config/site.js';
 
 	/** @type {{children: import('svelte').Snippet}} */
 	let { children } = $props();
@@ -10,7 +11,21 @@
 
 <svelte:head>
 	<link rel="preload" href={robotoFlexUrl} as="font" type="font/woff2" crossorigin="anonymous" />
-	<link rel="canonical" href={`https://oldtimerberater.eu${page.url.pathname}`} />
+	<link rel="canonical" href={new URL(page.url.pathname, siteUrl).href} />
+
+{#each Object.entries(siteUrls) as [locale, url]}
+<link
+rel="alternate"
+hreflang={locale}
+href={new URL(page.url.pathname, url).href}
+/>
+{/each}
+
+<link
+rel="alternate"
+hreflang="x-default"
+href={new URL(page.url.pathname, siteUrls.en).href}
+/>
 </svelte:head>
 
 <div class="site-shell">
@@ -25,7 +40,7 @@
 				href="/method/"
 				aria-current={page.route.id === '/method' ? 'page' : undefined}
 			>
-				{m.navigation_method()}
+				{m.common_method()}
 			</a>
 
 			<a

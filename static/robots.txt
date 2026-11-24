@@ -1,6 +1,0 @@
-
-User-agent: *
-Allow: /
-
-Sitemap: https://oldtimerberater.eu/sitemap.xml
-

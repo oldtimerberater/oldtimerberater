@@ -1,0 +1,17 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "schema_business_description": "Unabhängige Recherche, Fahrzeugbeurteilung und Kaufberatung für Sammler historisch bedeutender Automobile.",
+  "schema_advisor_job_title": "Unabhängiger Oldtimer-Berater",
+  "schema_advisor_description": "Unabhängiger Berater für Sammler historisch bedeutender Automobile.",
+  "schema_contact_type": "Vertrauliche Anfragen",
+  "schema_service_name": "Unabhängige Beratung für Sammler historisch bedeutender Automobile",
+  "schema_service_type": "Oldtimer-Kaufberatung",
+  "schema_service_audience": "Sammler historisch bedeutender Automobile",
+  "schema_service_area": "Weltweit",
+  "schema_offer_name": "Individueller Beratungsauftrag",
+  "schema_catalog_name": "Beratungsleistungen für Sammler",
+  "schema_catalog_search": "Suche und Beschaffung historisch bedeutender Automobile",
+  "schema_catalog_provenance": "Provenienzrecherche und historische Recherche",
+  "schema_catalog_assessment": "Fahrzeugbeurteilung und Koordination fachkundiger Untersuchungen",
+  "schema_catalog_acquisition": "Kaufbegleitung und Verhandlungsunterstützung"
+}

@@ -8,9 +8,10 @@
   "navigation_advisor": "Advisor",
   "navigation_legal_label": "Legal information",
   "common_imprint": "Imprint",
-	"common_privacy": "Privacy Policy",
-	"common_contact": "Contact",
-	"common_method": "Method",
-	"common_advisory": "Independent Advisory",
-	"common_location": "Berlin, Germany"
+  "common_privacy": "Privacy Policy",
+  "common_contact": "Contact",
+  "common_method": "Method",
+  "common_advisory": "Independent Advisory",
+  "common_location": "Berlin, Germany",
+  "navigation_language_label": "Language selection"
 }
